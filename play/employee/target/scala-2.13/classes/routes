@@ -1,7 +1,0 @@
-GET     /                       controllers.EmployeeController.list
-GET     /employees              controllers.EmployeeController.list
-GET     /employees/new          controllers.EmployeeController.createForm
-POST    /employees              controllers.EmployeeController.create
-GET     /employees/:id/edit     controllers.EmployeeController.editForm(id: Long)
-POST    /employees/:id          controllers.EmployeeController.update(id: Long)
-POST    /employees/:id/delete   controllers.EmployeeController.delete(id: Long)
