@@ -1,0 +1,37 @@
+@(title: String)(content: Html)(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@title</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; line-height: 1.45; }
+      table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+      th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; }
+      .actions { display: flex; gap: 0.5rem; }
+      .flash { padding: 0.75rem; margin: 1rem 0; background: #e6ffed; border: 1px solid #b7ebc6; }
+      .error { color: #b00020; margin: 0.25rem 0; }
+      .field { margin: 0.75rem 0; }
+      input { padding: 0.5rem; width: 100%; max-width: 380px; }
+      button, .button-link {
+        display: inline-block;
+        padding: 0.4rem 0.7rem;
+        background: #0057d8;
+        color: #fff;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .button-link.secondary { background: #4b5563; }
+      form.inline { display: inline; }
+    </style>
+  </head>
+  <body>
+    @request.flash.get("success").map { msg =>
+      <div class="flash">@msg</div>
+    }
+    @content
+  </body>
+</html>

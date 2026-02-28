@@ -1,0 +1,24 @@
+@(employeeForm: play.api.data.Form[models.EmployeeData])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages)
+
+@main("Create Employee") {
+  <h1>Create Employee</h1>
+
+  @helper.form(action = routes.EmployeeController.create) {
+    @helper.CSRF.formField
+
+    <div class="field">
+      @helper.inputText(employeeForm("name"), Symbol("placeholder") -> "Name")
+    </div>
+    <div class="field">
+      @helper.inputText(employeeForm("email"), Symbol("placeholder") -> "Email")
+    </div>
+    <div class="field">
+      @helper.inputText(employeeForm("department"), Symbol("placeholder") -> "Department")
+    </div>
+    <button type="submit">Save</button>
+  }
+
+  <p>
+    <a class="button-link secondary" href="@routes.EmployeeController.list">Back to list</a>
+  </p>
+}

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="Jamess-MacBook-Pro.local" name="controllers.EmployeeControllerSpec" tests="5" errors="0" failures="1" skipped="0" time="0.143" timestamp="2026-02-28T10:55:58">
+          <properties>
+      <property name="java.specification.version" value="21"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="sbt.supershell" value="false"/><property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/><property name="sun.boot.library.path" value="/Users/jamesking/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home/lib"/><property name="sun.java.command" value="/Users/jamesking/Library/Application Support/JetBrains/IntelliJIdea2024.1/plugins/Scala/launcher/sbt-launch.jar early(addPluginSbtFile=&quot;&quot;&quot;/private/var/folders/b0/3z6y14c15dd6lq0s3j2j3h140000gn/T/idea5.sbt&quot;&quot;&quot;) ; set ideaPort in Global := 51797 ; idea-shell"/><property name="jdk.debug" value="release"/><property name="sun.stderr.encoding" value="UTF-8"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2024-10-15"/><property name="java.home" value="/Users/jamesking/Library/Java/JavaVirtualMachines/corretto-21.0.5/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="sun.stdout.encoding" value="UTF-8"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="idea.installation.dir" value="/Applications/IntelliJ IDEA 2024.1.7.app/Contents"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="21.0.5+11-LTS"/><property name="user.name" value="jamesking"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="java.vendor.version" value="Corretto-21.0.5.11.1"/><property name="java.io.tmpdir" value="/var/folders/b0/3z6y14c15dd6lq0s3j2j3h140000gn/T/"/><property name="java.version" value="21.0.5"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/Users/jamesking/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="stderr.encoding" value="UTF-8"/><property name="java.vendor" value="Amazon.com Inc."/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="java.class.path" value="/Users/jamesking/Library/Application Support/JetBrains/IntelliJIdea2024.1/plugins/Scala/launcher/sbt-launch.jar"/><property name="java.vm.vendor" value="Amazon.com Inc."/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Europe/London"/><property name="java.vm.specification.version" value="21"/><property name="os.name" value="Mac OS X"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="GB"/><property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/jamesking"/><property name="user.language" value="en"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/b0/3z6y14c15dd6lq0s3j2j3h140000gn/T/.sbt94920a8a/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/b0/3z6y14c15dd6lq0s3j2j3h140000gn/T/.sbt94920a8a/swoval"/><property name="apple.awt.application.name" value="Boot"/><property name="jline.esc.timeout" value="0"/><property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/><property name="stdout.encoding" value="UTF-8"/><property name="path.separator" value=":"/><property name="os.version" value="15.6"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/><property name="user.dir" value="/Users/jamesking/work/drawer2/play/employee"/><property name="os.arch" value="aarch64"/><property name="grouping.with.qualified.names.enabled" value="true"/><property name="idea.managed" value="true"/><property name="java.vm.info" value="mixed mode, sharing"/><property name="java.vm.version" value="21.0.5+11-LTS"/><property name="java.class.version" value="65.0"/>
+    </properties>
+          <testcase classname="controllers.EmployeeControllerSpec" name="EmployeeController.list should render employees from repository" time="0.102">
+                      <failure message="java.lang.RuntimeException: No CSRF token was generated for this request! Is the CSRF filter installed?" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.RuntimeException: No CSRF token was generated for this request! Is the CSRF filter installed?
+	at scala.sys.package$.error(package.scala:27)
+	at views.html.helper.CSRF$.$anonfun$getToken$1(CSRF.scala:17)
+	at scala.Option.getOrElse(Option.scala:201)
+	at views.html.helper.CSRF$.getToken(CSRF.scala:17)
+	at views.html.helper.CSRF$.formField(CSRF.scala:35)
+	at views.html.employees.list$.$anonfun$apply$1(list.template.scala:54)
+	at scala.collection.immutable.List.map(List.scala:247)
+	at scala.collection.immutable.List.map(List.scala:79)
+	at views.html.employees.list$.apply(list.template.scala:45)
+	at controllers.EmployeeController.$anonfun$list$2(EmployeeController.scala:29)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1423)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+</failure>
+                    </testcase><testcase classname="controllers.EmployeeControllerSpec" name="EmployeeController.create should create employee and redirect on valid form submission" time="0.008">
+                      
+                    </testcase><testcase classname="controllers.EmployeeControllerSpec" name="EmployeeController.create should return bad request on invalid form submission" time="0.03">
+                      
+                    </testcase><testcase classname="controllers.EmployeeControllerSpec" name="EmployeeController.update and delete should update and delete an existing employee" time="0.002">
+                      
+                    </testcase><testcase classname="controllers.EmployeeControllerSpec" name="EmployeeController.update and delete should return not found when editing a missing employee" time="0.001">
+                      
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>
