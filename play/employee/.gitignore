@@ -1,0 +1,31 @@
+# SBT / Scala / Play build outputs
+target/
+project/target/
+project/project/
+lib_managed/
+out/
+
+# Dependency and compiler caches (local-only)
+.bsp/
+.bloop/
+.metals/
+.scala-build/
+.ammonite/
+
+# Optional local sbt/ivy dirs used in some environments
+.sbt/
+.sbtboot/
+.ivy2/
+
+# Logs and temp files
+*.log
+*.class
+*.tmp
+*.swp
+*~
+
+# IDE/editor files
+.idea/
+.vscode/
+.history/
+.DS_Store
