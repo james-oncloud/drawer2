@@ -25,8 +25,9 @@ class EmployeeController @Inject() (
   )
 
   def list: Action[AnyContent] = Action.async { implicit request =>
-    employeeRepository.listAll().map { employees =>
-      Ok(views.html.employees.list(employees))
+    val query = request.getQueryString("q").getOrElse("").trim
+    employeeRepository.search(query).map { employees =>
+      Ok(views.html.employees.list(employees, query))
     }
   }
 

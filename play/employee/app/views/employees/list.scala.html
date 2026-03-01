@@ -1,11 +1,22 @@
-@(employees: Seq[models.Employee])(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages)
+@(employees: Seq[models.Employee], query: String)(implicit request: play.api.mvc.RequestHeader, messages: play.api.i18n.Messages)
 
 @main("Employees") {
   <h1>Employees</h1>
   <a class="button-link" href="@routes.EmployeeController.createForm">Create Employee</a>
+  <form method="get" action="@routes.EmployeeController.list" style="margin-top: 1rem;">
+    <div class="field">
+      <input type="text" name="q" value="@query" placeholder="Search by name, email, or department" />
+    </div>
+    <button type="submit">Search</button>
+    <a class="button-link secondary" href="@routes.EmployeeController.list">Clear</a>
+  </form>
 
   @if(employees.isEmpty) {
-    <p>No employees found.</p>
+    @if(query.nonEmpty) {
+      <p>No employees found for "@query".</p>
+    } else {
+      <p>No employees found.</p>
+    }
   } else {
     <table>
       <thead>

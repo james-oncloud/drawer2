@@ -61,5 +61,18 @@ class EmployeeRepositorySpec extends PlaySpec with ScalaFutures {
         deletedAgain mustBe false
       }
     }
+
+    "search employees by name, email, or department" in {
+      val repo = new EmployeeRepository()
+
+      whenReady(repo.create(EmployeeData("Alice", "alice@example.com", "Engineering")))(_ => ())
+      whenReady(repo.create(EmployeeData("Bob", "bob@sales.example.com", "Sales")))(_ => ())
+      whenReady(repo.create(EmployeeData("Carol", "carol@example.com", "People Ops")))(_ => ())
+
+      whenReady(repo.search("alice"))(_.map(_.name) mustBe Seq("Alice"))
+      whenReady(repo.search("sales.example.com"))(_.map(_.name) mustBe Seq("Bob"))
+      whenReady(repo.search("people"))(_.map(_.name) mustBe Seq("Carol"))
+      whenReady(repo.search("  "))(_.size mustBe 3)
+    }
   }
 }

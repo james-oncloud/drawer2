@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Employee List{% endblock %}
+
+{% block content %}
+<div class="top-actions">
+    <a class="btn" href="{% url 'employee_create' %}">Add Employee</a>
+</div>
+
+<form method="get" style="margin-bottom: 1rem;">
+    <input
+        type="text"
+        name="q"
+        value="{{ query }}"
+        placeholder="Search by name, email, position, or department"
+    >
+    <button class="btn" type="submit">Search</button>
+    {% if query %}
+    <a class="btn" href="{% url 'employee_list' %}">Clear</a>
+    {% endif %}
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Date Hired</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee.first_name }} {{ employee.last_name }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.position }}</td>
+            <td>{{ employee.department|default:"-" }}</td>
+            <td>{{ employee.date_hired|default:"-" }}</td>
+            <td>
+                <a class="btn" href="{% url 'employee_update' employee.pk %}">Edit</a>
+                <a class="btn btn-danger" href="{% url 'employee_delete' employee.pk %}">Delete</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="6">
+                {% if query %}
+                No employees found for "{{ query }}".
+                {% else %}
+                No employees found. Add one using the button above.
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

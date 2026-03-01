@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Employee Manager{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem auto;
+            max-width: 900px;
+            padding: 0 1rem;
+        }
+        .top-actions {
+            margin-bottom: 1rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.6rem;
+            text-align: left;
+        }
+        th {
+            background: #f6f6f6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.4rem 0.7rem;
+            text-decoration: none;
+            border: 1px solid #888;
+            border-radius: 4px;
+            color: #222;
+            margin-right: 0.3rem;
+        }
+        .btn:hover {
+            background: #f0f0f0;
+        }
+        .btn-danger {
+            border-color: #c22;
+            color: #c22;
+        }
+        form p {
+            margin-bottom: 0.8rem;
+        }
+        input, select {
+            width: 100%;
+            max-width: 500px;
+            padding: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Manager</h1>
+    {% block content %}{% endblock %}
+</body>
+</html>

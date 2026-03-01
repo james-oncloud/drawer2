@@ -15,6 +15,23 @@ class EmployeeRepository @Inject() (implicit ec: ExecutionContext) {
   def listAll(): Future[Seq[Employee]] =
     Future.successful(employees.values.toSeq.sortBy(_.id))
 
+  def search(query: String): Future[Seq[Employee]] = {
+    val normalized = query.trim.toLowerCase
+    if (normalized.isEmpty) {
+      listAll()
+    } else {
+      Future.successful(
+        employees.values.toSeq
+          .filter { employee =>
+            employee.name.toLowerCase.contains(normalized) ||
+            employee.email.toLowerCase.contains(normalized) ||
+            employee.department.toLowerCase.contains(normalized)
+          }
+          .sortBy(_.id)
+      )
+    }
+  }
+
   def findById(id: Long): Future[Option[Employee]] =
     Future.successful(employees.get(id))
 

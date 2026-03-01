@@ -58,6 +58,10 @@ class EmployeeIntegrationSpec extends PlaySpec with GuiceOneAppPerTest with Scal
       val listAfterUpdate = route(app, FakeRequest(GET, "/employees")).get
       contentAsString(listAfterUpdate) must include("Integration User Updated")
 
+      val searchResult = route(app, FakeRequest(GET, "/employees?q=platform")).get
+      status(searchResult) mustBe OK
+      contentAsString(searchResult) must include("Integration User Updated")
+
       val deleteRequest = FakeRequest(POST, s"/employees/$employeeId/delete").withCSRFToken
       val deleteResult = route(app, deleteRequest).get
 

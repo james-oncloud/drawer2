@@ -29,6 +29,19 @@ class EmployeeControllerSpec extends PlaySpec with ScalaFutures {
       contentAsString(result) must include("Alice")
       contentAsString(result) must include("Employees")
     }
+
+    "filter employees using the q query parameter" in {
+      val repo = new EmployeeRepository()
+      whenReady(repo.create(EmployeeData("Alice", "alice@example.com", "Engineering")))(_ => ())
+      whenReady(repo.create(EmployeeData("Bob", "bob@example.com", "Sales")))(_ => ())
+      val controller = buildController(repo)
+
+      val result = controller.list.apply(FakeRequest(GET, "/employees?q=sales").withCSRFToken)
+
+      status(result) mustBe OK
+      contentAsString(result) must include("Bob")
+      contentAsString(result) must not include "Alice"
+    }
   }
 
   "EmployeeController.create" should {
