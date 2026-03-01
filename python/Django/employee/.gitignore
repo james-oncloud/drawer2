@@ -1,0 +1,38 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Django local data
+db.sqlite3
+db.sqlite3-journal
+
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Test and coverage artifacts
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Type checker / linter caches
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# IDE/editor files
+.idea/
+.vscode/
+
+# macOS files
+.DS_Store
