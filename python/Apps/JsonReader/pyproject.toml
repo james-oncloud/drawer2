@@ -1,0 +1,6 @@
+[project]
+name = "json-reader"
+version = "0.1.0"
+description = "Generator-based Missive JSON reader"
+requires-python = ">=3.10"
+

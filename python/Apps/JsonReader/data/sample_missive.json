@@ -1,0 +1,58 @@
+[
+  {
+    "id": "msg_001",
+    "subject": "Welcome to ACME Support",
+    "sender": {
+      "email": "agent@acme.io",
+      "name": "ACME Agent"
+    },
+    "recipients": [
+      {
+        "email": "james@example.com",
+        "name": "James King"
+      }
+    ],
+    "created_at": "2026-03-01T09:30:00Z",
+    "body": "Hello James, welcome to ACME Support. Reply here if you need any help.",
+    "labels": ["inbox", "support"]
+  },
+  {
+    "id": "msg_002",
+    "subject": "Your invoice is ready",
+    "sender": {
+      "email": "billing@acme.io",
+      "name": "ACME Billing"
+    },
+    "recipients": [
+      {
+        "email": "james@example.com",
+        "name": "James King"
+      },
+      {
+        "email": "finance@example.com",
+        "name": "Finance Team"
+      }
+    ],
+    "created_at": "2026-03-02T14:05:00Z",
+    "body": "Invoice #48391 is now available in your dashboard.",
+    "labels": ["billing"]
+  },
+  {
+    "id": "msg_003",
+    "subject": "Feature request follow-up",
+    "sender": {
+      "email": "product@acme.io",
+      "name": "Product Team"
+    },
+    "recipients": [
+      {
+        "email": "james@example.com",
+        "name": "James King"
+      }
+    ],
+    "created_at": "2026-03-03T08:15:00Z",
+    "body": "We reviewed your feature request and added it to our roadmap.",
+    "labels": ["product", "updates"]
+  }
+]
+
