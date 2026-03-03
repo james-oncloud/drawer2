@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sample-python-project"
+version = "0.1.0"
+description = "A complete Python 3 starter project with a CLI and tests."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "James King" }
+]
+license = { text = "MIT" }
+keywords = ["python", "starter", "cli", "template"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6.0",
+  "mypy>=1.11.0",
+]
+
+[project.scripts]
+sample = "sample_app.cli:run"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["sample_app"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
