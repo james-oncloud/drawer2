@@ -1,0 +1,36 @@
+@(tokenName: String, tokenValue: String)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Create Course</title>
+  </head>
+  <body>
+    <h1>Create Course</h1>
+    <form method="POST" action="/courses/submit">
+      <input type="hidden" name="@tokenName" value="@tokenValue" />
+      <div>
+        <label>Title</label>
+        <input type="text" name="title" required />
+      </div>
+      <div>
+        <label>Level</label>
+        <select name="level" required>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </div>
+      <div>
+        <label>Tags (comma separated)</label>
+        <input type="text" name="tags" />
+      </div>
+      <div>
+        <label>Source</label>
+        <input type="text" name="source" />
+      </div>
+      <button type="submit">Create</button>
+    </form>
+  </body>
+</html>

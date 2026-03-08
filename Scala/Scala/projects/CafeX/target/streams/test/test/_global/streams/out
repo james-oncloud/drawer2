@@ -1,0 +1,16 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(cafex.BillCalculatorSpec, org.scalatest.tools.Framework$$anon$1@1f5d8325, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mBillCalculatorSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- step 1: standard bill returns total for purchased items[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- step 2: no service charge when all items are drinks[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- step 2: 10 percent service charge when order includes cold food[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- step 2: 20 percent service charge when order includes hot food[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- step 2: service charge is capped at 20 pounds for hot food orders[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- rounds service charge to 2 decimal places[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- throws helpful error for unknown menu items[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 151 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 7[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 7, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cafex.BillCalculatorSpec[0m

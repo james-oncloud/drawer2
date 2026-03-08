@@ -1,0 +1,16 @@
+/target/
+/project/target/
+/project/project/
+/.bsp/
+/.idea/
+/.vscode/
+/.metals/
+/.scala-build/
+/.sbt-cache/
+.DS_Store
+*.log
+.sbt-cache
+.vscode
+.metals
+.idea
+.bsp

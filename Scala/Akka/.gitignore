@@ -1,0 +1,15 @@
+# Scala / SBT
+target/
+project/target/
+project/project/
+*.class
+*.log
+
+# IDEs
+.idea/
+.bsp/
+.metals/
+.vscode/
+
+# macOS
+.DS_Store

@@ -1,0 +1,104 @@
+openapi: 3.0.3
+info:
+  title: Complex-First Python App
+  version: "1.0.0"
+  description: |
+    API specification for the Complex-First Python App.
+servers:
+  - url: http://localhost:8000
+paths:
+  /health:
+    get:
+      summary: Health check
+      description: |
+        Checks connectivity to Postgres and Redis.
+      responses:
+        "200":
+          description: Health status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /items:
+    get:
+      summary: List items
+      responses:
+        "200":
+          description: Item list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ItemRead"
+    post:
+      summary: Create item
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ItemCreate"
+      responses:
+        "200":
+          description: Created item
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ItemRead"
+components:
+  schemas:
+    ItemCreate:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          example: Learn Python
+        notes:
+          type: string
+          nullable: true
+          example: complex-first
+    ItemRead:
+      type: object
+      required:
+        - id
+        - name
+        - created_at
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+        notes:
+          type: string
+          nullable: true
+        created_at:
+          type: string
+          format: date-time
+    ServiceStatus:
+      type: object
+      required:
+        - ok
+      properties:
+        ok:
+          type: boolean
+        error:
+          type: string
+          nullable: true
+    HealthStatus:
+      type: object
+      required:
+        - status
+        - db
+        - redis
+      properties:
+        status:
+          type: string
+          enum: ["ok", "degraded"]
+        db:
+          $ref: "#/components/schemas/ServiceStatus"
+        redis:
+          $ref: "#/components/schemas/ServiceStatus"

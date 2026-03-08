@@ -1,0 +1,10 @@
+GET     /api/courses                     controllers.CourseController.list
+GET     /courses/new                     controllers.CourseController.newForm
+POST    /courses/submit                  controllers.CourseController.submitForm
+GET     /api/courses/:id                 controllers.CourseController.get(id: String)
+POST    /api/courses                     controllers.CourseController.create
+PATCH   /api/courses/:id/status          controllers.CourseController.updateStatus(id: String)
+POST    /api/courses/:id/lessons         controllers.CourseController.addLesson(id: String)
+GET     /api/courses/search              controllers.CourseController.search(term: String, level: Option[String], status: Option[String])
+GET     /api/docs/swagger.yaml           controllers.DocsController.swagger
+GET     /api/docs                        controllers.DocsController.swaggerUi

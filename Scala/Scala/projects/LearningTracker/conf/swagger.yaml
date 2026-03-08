@@ -1,0 +1,271 @@
+openapi: 3.0.3
+info:
+  title: Learning Tracker API
+  version: 0.1.0
+  description: Demo API for Programming in Scala language features.
+servers:
+  - url: http://localhost:9000
+paths:
+  /api/courses:
+    get:
+      summary: List courses
+      responses:
+        "200":
+          description: Courses
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Course"
+    post:
+      summary: Create a course
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateCourseRequest"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Course"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /api/courses/{id}:
+    get:
+      summary: Get a course by id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Course
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Course"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /api/courses/{id}/status:
+    patch:
+      summary: Update course status
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateStatusRequest"
+      responses:
+        "200":
+          description: Updated course
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Course"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /api/courses/{id}/lessons:
+    post:
+      summary: Add a lesson to a course
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateLessonRequest"
+      responses:
+        "200":
+          description: Updated course
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Course"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /api/courses/search:
+    get:
+      summary: Search courses
+      parameters:
+        - name: term
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: level
+          in: query
+          required: false
+          schema:
+            $ref: "#/components/schemas/Level"
+        - name: status
+          in: query
+          required: false
+          schema:
+            $ref: "#/components/schemas/Status"
+      responses:
+        "200":
+          description: Courses
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Course"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /api/docs/swagger.yaml:
+    get:
+      summary: Download OpenAPI spec
+      responses:
+        "200":
+          description: Swagger file
+          content:
+            application/yaml:
+              schema:
+                type: string
+components:
+  schemas:
+    Course:
+      type: object
+      required: [id, title, level, status, lessons, tags, metadata, createdAt, updatedAt]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        level:
+          $ref: "#/components/schemas/Level"
+        status:
+          $ref: "#/components/schemas/Status"
+        lessons:
+          type: array
+          items:
+            $ref: "#/components/schemas/Lesson"
+        tags:
+          type: array
+          uniqueItems: true
+          items:
+            type: string
+        metadata:
+          type: object
+          additionalProperties:
+            type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    Lesson:
+      type: object
+      required: [id, title, minutes, tags]
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        minutes:
+          type: integer
+          minimum: 0
+        tags:
+          type: array
+          items:
+            type: string
+    CreateCourseRequest:
+      type: object
+      required: [title, level, tags, metadata]
+      properties:
+        title:
+          type: string
+        level:
+          $ref: "#/components/schemas/Level"
+        tags:
+          type: array
+          uniqueItems: true
+          items:
+            type: string
+        metadata:
+          type: object
+          additionalProperties:
+            type: string
+    UpdateStatusRequest:
+      type: object
+      required: [status]
+      properties:
+        status:
+          $ref: "#/components/schemas/Status"
+    CreateLessonRequest:
+      type: object
+      required: [title, minutes, tags]
+      properties:
+        title:
+          type: string
+        minutes:
+          type: integer
+          minimum: 0
+        tags:
+          type: array
+          items:
+            type: string
+    Level:
+      type: string
+      enum: [Beginner, Intermediate, Advanced]
+    Status:
+      type: string
+      enum: [Planned, InProgress, Completed, Archived]
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string

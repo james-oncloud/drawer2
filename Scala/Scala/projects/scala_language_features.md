@@ -1,0 +1,25 @@
+# Scala Language Features (from Programming in Scala, 5th Ed.)
+
+- Scalable language design and philosophy — described in `LearningTracker/README.md`
+- Core syntax and basic program structure — seen across `LearningTracker/app/controllers/CourseController.scala`
+- Classes and objects — `LearningTracker/app/models/Course.scala`
+- Basic types and operations — `LearningTracker/app/services/CourseService.scala`
+- Functional objects (object-oriented + functional style) — `LearningTracker/app/services/CourseService.scala`
+- Built-in control structures — `LearningTracker/app/controllers/CourseController.scala`
+- Functions and closures — `LearningTracker/app/services/CourseService.scala`
+- Control abstraction — `LearningTracker/app/services/CourseService.scala` (higher-order helper)
+- Composition and inheritance — `LearningTracker/app/models/Course.scala`
+- Traits — `LearningTracker/app/models/EntityTraits.scala`
+- Packages, imports, and exports — `LearningTracker/app/controllers/CourseController.scala`
+- Pattern matching — `LearningTracker/app/services/CourseService.scala`
+- Lists and list processing — `LearningTracker/app/services/InMemoryCourseRepository.scala`
+- Collections beyond lists — `LearningTracker/app/services/CourseService.scala` (sets/maps)
+- Mutable objects and state — `LearningTracker/app/services/InMemoryCourseRepository.scala`
+- Scala type hierarchy — `LearningTracker/app/models/Level.scala` and `LearningTracker/app/models/Status.scala`
+- Type parameterization (generics) — `LearningTracker/app/services/Repository.scala`
+- Enums — modeled as sealed traits in `LearningTracker/app/models/Level.scala` and `LearningTracker/app/models/Status.scala`
+- Abstract members — `LearningTracker/app/models/EntityTraits.scala`
+- Givens (implicit parameters/instances) — modeled with implicits in `LearningTracker/app/models/Identifiers.scala`
+- Extension methods — modeled with implicit classes in `LearningTracker/app/models/Extensions.scala`
+- Typeclasses — `LearningTracker/app/models/Typeclasses.scala`
+- Assertions and testing — `LearningTracker/test/controllers/CourseControllerSpec.scala`
