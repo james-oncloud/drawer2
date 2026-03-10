@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -86,7 +87,15 @@ def _write_demo_input(path: Path) -> None:
     path.write_text("\n".join(json.dumps(row) for row in records) + "\n", encoding="utf-8")
 
 
-def main() -> None:
+def _build_pipeline() -> ProcessingPipeline:
+    return ProcessingPipeline(
+        steps=StepFactory.build_steps(
+            ["normalize_currency", "enrich_counterparty", "risk_classification"]
+        )
+    )
+
+
+def run_single_flow_demo() -> None:
     demo_root = Path("./demo")
     input_path = demo_root / "input" / "records.jsonl"
     invalid_path = demo_root / "invalid" / "data.json"
@@ -99,11 +108,7 @@ def main() -> None:
     mapper = RecordMapper()
     validator = RecordValidator(supported_currencies=["USD", "EUR", "GBP", "JPY"])
     invalid_writer = InvalidRecordWriter(output_path=invalid_path)
-    pipeline = ProcessingPipeline(
-        steps=StepFactory.build_steps(
-            ["normalize_currency", "enrich_counterparty", "risk_classification"]
-        )
-    )
+    pipeline = _build_pipeline()
     valid_writer: JsonWriter = S3JsonWriter(
         bucket="demo-bucket",
         prefix="business-records",
@@ -120,10 +125,101 @@ def main() -> None:
     )
     service.run()
 
-    print("Demo complete.")
+    print("Single-flow demo complete.")
     print(f"Input file: {input_path}")
     print(f"Invalid records: {invalid_path}")
     print(f"Simulated S3 output: {fake_s3_path}")
+
+
+def _chunked(items: list[str], chunk_size: int) -> list[list[str]]:
+    return [items[i : i + chunk_size] for i in range(0, len(items), chunk_size)]
+
+
+def _demo_rows_for_table(table_name: str) -> list[dict[str, Any]]:
+    """
+    Simulates table-level DB reads.
+    Each table emits valid and invalid rows so routing can be observed.
+    """
+    now = datetime.now(timezone.utc)
+    table_num = int(table_name.split("_")[-1])
+    return [
+        {
+            "id": f"{table_name}-ok",
+            "source": "db",
+            "amount": str(100 + table_num),
+            "currency": "usd",
+            "timestamp": now.isoformat(),
+            "counterparty": f"cp-{table_num}",
+        },
+        {
+            "id": f"{table_name}-bad",
+            "source": "db",
+            "amount": "-1",
+            "currency": "USD",
+            "timestamp": now.isoformat(),
+        },
+    ]
+
+
+def _build_db_chunk_service(
+    *,
+    table_names: list[str],
+    chunk_id: int,
+    output_root: Path,
+) -> RecordIngestionService:
+    readers: list[Reader] = [
+        DbReader(fetch_rows=lambda t=table: _demo_rows_for_table(t)) for table in table_names
+    ]
+    mapper = RecordMapper()
+    validator = RecordValidator(supported_currencies=["USD", "EUR", "GBP", "JPY"])
+    invalid_writer = InvalidRecordWriter(
+        output_path=output_root / "invalid" / f"chunk_{chunk_id}.json"
+    )
+    pipeline = _build_pipeline()
+    valid_writer: JsonWriter = S3JsonWriter(
+        bucket="demo-bucket",
+        prefix=f"business-records/chunk={chunk_id}",
+        batch_size=20,
+        s3_client=LocalS3Client(base_dir=output_root / "s3_dump"),
+    )
+    return RecordIngestionService(
+        readers=readers,
+        mapper=mapper,
+        validator=validator,
+        invalid_writer=invalid_writer,
+        pipeline=pipeline,
+        valid_writer=valid_writer,
+    )
+
+
+def run_parallel_db_chunks_demo() -> None:
+    """
+    Ingest 20 DB tables in chunks of 5 tables, with each chunk run in parallel.
+    Total workers: 4 (20 / 5).
+    """
+    output_root = Path("./demo_parallel")
+    table_names = [f"table_{idx}" for idx in range(1, 21)]
+    table_chunks = _chunked(table_names, 5)
+
+    services = [
+        _build_db_chunk_service(table_names=chunk, chunk_id=i, output_root=output_root)
+        for i, chunk in enumerate(table_chunks, start=1)
+    ]
+
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = [executor.submit(service.run) for service in services]
+        for future in as_completed(futures):
+            future.result()
+
+    print("Parallel DB chunk demo complete.")
+    print("Processed 20 tables in 4 parallel workers (5 tables per worker).")
+    print(f"Invalid chunk files: {output_root / 'invalid'}")
+    print(f"Simulated S3 output: {output_root / 's3_dump'}")
+
+
+def main() -> None:
+    run_single_flow_demo()
+    run_parallel_db_chunks_demo()
 
 
 if __name__ == "__main__":

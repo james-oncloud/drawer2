@@ -1,0 +1,5 @@
+{"record_id": "table_6-ok", "source": "db", "amount": "106", "currency": "USD", "timestamp": "2026-03-10 21:25:45.439699+00:00", "counterparty": "cp-6", "risk_level": "low"}
+{"record_id": "table_7-ok", "source": "db", "amount": "107", "currency": "USD", "timestamp": "2026-03-10 21:25:45.439729+00:00", "counterparty": "cp-7", "risk_level": "low"}
+{"record_id": "table_8-ok", "source": "db", "amount": "108", "currency": "USD", "timestamp": "2026-03-10 21:25:45.439749+00:00", "counterparty": "cp-8", "risk_level": "low"}
+{"record_id": "table_9-ok", "source": "db", "amount": "109", "currency": "USD", "timestamp": "2026-03-10 21:25:45.439769+00:00", "counterparty": "cp-9", "risk_level": "low"}
+{"record_id": "table_10-ok", "source": "db", "amount": "110", "currency": "USD", "timestamp": "2026-03-10 21:25:45.439789+00:00", "counterparty": "cp-10", "risk_level": "low"}
