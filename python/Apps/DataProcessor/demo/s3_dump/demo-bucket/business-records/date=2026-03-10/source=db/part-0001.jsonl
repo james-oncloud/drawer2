@@ -1,2 +1,0 @@
-{"record_id": "db-1001", "source": "db", "amount": "15000.00", "currency": "USD", "timestamp": "2026-03-10 19:24:10.857236+00:00", "counterparty": "UNKNOWN", "risk_level": "medium"}
-{"record_id": "file-2001", "source": "file", "amount": "500.55", "currency": "EUR", "timestamp": "2026-03-10 19:24:10.856748+00:00", "counterparty": "UNKNOWN", "risk_level": "low"}
