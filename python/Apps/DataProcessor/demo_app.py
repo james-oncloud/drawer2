@@ -12,11 +12,10 @@ from app.adapters.mappers.record_mapper import RecordMapper
 from app.adapters.output.invalid_record_writer import InvalidRecordWriter
 from app.adapters.output.s3_json_writer import S3JsonWriter
 from app.adapters.validators.record_validator import RecordValidator
-from app.application.ingestion_service import RecordIngestionService
+from app.application.ingestion_service import RecordIngestionService, SourceIngestionConfig
 from app.application.pipeline import ProcessingPipeline
 from app.application.step_factory import StepFactory
-from app.ports.readers import DbSourceReader, JsonSourceReader, Reader
-from app.ports.writers import JsonWriter
+from app.ports.readers import DbSourceReader, JsonSourceReader
 
 
 class LocalS3Client:
@@ -98,36 +97,49 @@ def _build_pipeline() -> ProcessingPipeline:
 def run_single_flow_demo() -> None:
     demo_root = Path("./demo")
     input_path = demo_root / "input" / "records.jsonl"
-    invalid_path = demo_root / "invalid" / "data.json"
     fake_s3_path = demo_root / "s3_dump"
     _write_demo_input(input_path)
 
     db_reader: DbSourceReader = DbReader(fetch_rows=_demo_db_rows)
     json_reader: JsonSourceReader = JsonFileReader(file_paths=[input_path])
-    readers: list[Reader] = [db_reader, json_reader]
-    mapper = RecordMapper()
-    validator = RecordValidator(supported_currencies=["USD", "EUR", "GBP", "JPY"])
-    invalid_writer = InvalidRecordWriter(output_path=invalid_path)
-    pipeline = _build_pipeline()
-    valid_writer: JsonWriter = S3JsonWriter(
-        bucket="demo-bucket",
-        prefix="business-records",
-        batch_size=2,
-        s3_client=LocalS3Client(base_dir=fake_s3_path),
+    db_source = SourceIngestionConfig(
+        reader=db_reader,
+        mapper=RecordMapper(),
+        validator=RecordValidator(supported_currencies=["USD", "EUR", "GBP", "JPY"]),
+        invalid_writer=InvalidRecordWriter(output_path=demo_root / "invalid" / "db.json"),
+        pipeline=_build_pipeline(),
+        valid_writer=S3JsonWriter(
+            bucket="demo-bucket",
+            prefix="business-records/source=db",
+            batch_size=2,
+            s3_client=LocalS3Client(base_dir=fake_s3_path),
+        ),
+        source_name="db",
+    )
+    json_source = SourceIngestionConfig(
+        reader=json_reader,
+        mapper=RecordMapper(),
+        validator=RecordValidator(supported_currencies=["USD", "EUR", "GBP", "JPY"]),
+        invalid_writer=InvalidRecordWriter(
+            output_path=demo_root / "invalid" / "file.json"
+        ),
+        pipeline=_build_pipeline(),
+        valid_writer=S3JsonWriter(
+            bucket="demo-bucket",
+            prefix="business-records/source=file",
+            batch_size=2,
+            s3_client=LocalS3Client(base_dir=fake_s3_path),
+        ),
+        source_name="file",
     )
     service = RecordIngestionService(
-        readers=readers,
-        mapper=mapper,
-        validator=validator,
-        invalid_writer=invalid_writer,
-        pipeline=pipeline,
-        valid_writer=valid_writer,
+        sources=[db_source, json_source],
     )
     service.run()
 
     print("Single-flow demo complete.")
     print(f"Input file: {input_path}")
-    print(f"Invalid records: {invalid_path}")
+    print(f"Invalid records: {demo_root / 'invalid'}")
     print(f"Simulated S3 output: {fake_s3_path}")
 
 
@@ -167,28 +179,29 @@ def _build_db_chunk_service(
     chunk_id: int,
     output_root: Path,
 ) -> RecordIngestionService:
-    readers: list[Reader] = [
-        DbReader(fetch_rows=lambda t=table: _demo_rows_for_table(t)) for table in table_names
+    sources = [
+        SourceIngestionConfig(
+            reader=DbReader(fetch_rows=lambda t=table: _demo_rows_for_table(t)),
+            mapper=RecordMapper(),
+            validator=RecordValidator(
+                supported_currencies=["USD", "EUR", "GBP", "JPY"]
+            ),
+            invalid_writer=InvalidRecordWriter(
+                output_path=output_root / "invalid" / f"chunk_{chunk_id}_{table}.json"
+            ),
+            pipeline=_build_pipeline(),
+            valid_writer=S3JsonWriter(
+                bucket="demo-bucket",
+                prefix=f"business-records/chunk={chunk_id}/table={table}",
+                batch_size=20,
+                s3_client=LocalS3Client(base_dir=output_root / "s3_dump"),
+            ),
+            source_name=table,
+        )
+        for table in table_names
     ]
-    mapper = RecordMapper()
-    validator = RecordValidator(supported_currencies=["USD", "EUR", "GBP", "JPY"])
-    invalid_writer = InvalidRecordWriter(
-        output_path=output_root / "invalid" / f"chunk_{chunk_id}.json"
-    )
-    pipeline = _build_pipeline()
-    valid_writer: JsonWriter = S3JsonWriter(
-        bucket="demo-bucket",
-        prefix=f"business-records/chunk={chunk_id}",
-        batch_size=20,
-        s3_client=LocalS3Client(base_dir=output_root / "s3_dump"),
-    )
     return RecordIngestionService(
-        readers=readers,
-        mapper=mapper,
-        validator=validator,
-        invalid_writer=invalid_writer,
-        pipeline=pipeline,
-        valid_writer=valid_writer,
+        sources=sources,
     )
 
 

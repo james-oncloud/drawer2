@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from decimal import Decimal
 from typing import Any
 
-from app.application.ingestion_service import RecordIngestionService
+from app.application.ingestion_service import RecordIngestionService, SourceIngestionConfig
 from app.application.pipeline import ProcessingPipeline
 from app.domain.models import BusinessRecord
 from app.domain.validation import ValidationError, ValidationResult
@@ -93,13 +93,17 @@ class TestRecordIngestionService(unittest.TestCase):
         )
         invalid_writer = CaptureInvalidWriter()
         valid_writer = CaptureValidWriter()
-        service = RecordIngestionService(
-            readers=[reader],
+        source = SourceIngestionConfig(
+            reader=reader,
             mapper=StubMapper(),
             validator=StubValidator(),
             invalid_writer=invalid_writer,
             pipeline=ProcessingPipeline([PassThroughStep()]),
             valid_writer=valid_writer,
+            source_name="test",
+        )
+        service = RecordIngestionService(
+            sources=[source],
         )
 
         service.run()

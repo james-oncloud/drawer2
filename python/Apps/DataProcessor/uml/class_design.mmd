@@ -1,0 +1,160 @@
+classDiagram
+direction LR
+
+class BusinessRecord {
+  +str record_id
+  +str source
+  +Decimal amount
+  +str currency
+  +datetime timestamp
+  +str? counterparty
+  +str? risk_level
+}
+
+class ValidationError {
+  +str field
+  +str message
+}
+
+class ValidationResult {
+  +bool is_valid
+  +list~ValidationError~ errors
+}
+
+class Reader {
+  <<interface>>
+  +read() Iterable~dict~
+}
+
+class DbSourceReader {
+  <<interface>>
+}
+
+class JsonSourceReader {
+  <<interface>>
+}
+
+class RecordMapper {
+  <<interface>>
+  +map(raw) BusinessRecord
+}
+
+class Validator {
+  <<interface>>
+  +validate(record) ValidationResult
+}
+
+class ProcessingStep {
+  <<interface>>
+  +process(record) BusinessRecord
+}
+
+class Writer {
+  <<interface>>
+  +write(record)
+  +flush()
+}
+
+class JsonWriter {
+  <<interface>>
+}
+
+class InvalidRecordSink {
+  <<interface>>
+  +write(source, raw_record, errors)
+  +flush()
+}
+
+class ProcessingPipeline {
+  -steps: list~ProcessingStep~
+  +run(record) BusinessRecord
+}
+
+class SourceIngestionConfig {
+  +Reader reader
+  +RecordMapper mapper
+  +Validator validator
+  +InvalidRecordSink invalid_writer
+  +ProcessingPipeline pipeline
+  +Writer valid_writer
+  +str? source_name
+}
+
+class RecordIngestionService {
+  -sources: list~SourceIngestionConfig~
+  +run()
+}
+
+class DbReader {
+  +read() Iterable~dict~
+}
+
+class JsonFileReader {
+  +read() Iterable~dict~
+}
+
+class RecordMapperImpl {
+  +map(raw) BusinessRecord
+}
+
+class RecordValidator {
+  +validate(record) ValidationResult
+}
+
+class InvalidRecordWriter {
+  +write(source, raw_record, errors)
+  +flush()
+}
+
+class S3JsonWriter {
+  +write(record)
+  +flush()
+}
+
+class NormalizeCurrencyStep {
+  +process(record) BusinessRecord
+}
+
+class EnrichCounterpartyStep {
+  +process(record) BusinessRecord
+}
+
+class RiskClassificationStep {
+  +process(record) BusinessRecord
+}
+
+class StepFactory {
+  +build_steps(enabled_steps) list~ProcessingStep~
+}
+
+Reader <|-- DbSourceReader
+Reader <|-- JsonSourceReader
+Writer <|-- JsonWriter
+
+DbSourceReader <|.. DbReader
+JsonSourceReader <|.. JsonFileReader
+RecordMapper <|.. RecordMapperImpl
+Validator <|.. RecordValidator
+InvalidRecordSink <|.. InvalidRecordWriter
+JsonWriter <|.. S3JsonWriter
+ProcessingStep <|.. NormalizeCurrencyStep
+ProcessingStep <|.. EnrichCounterpartyStep
+ProcessingStep <|.. RiskClassificationStep
+
+RecordValidator --> ValidationResult
+ValidationResult o-- ValidationError
+RecordMapperImpl --> BusinessRecord
+ProcessingPipeline --> ProcessingStep
+ProcessingPipeline --> BusinessRecord
+
+SourceIngestionConfig --> Reader
+SourceIngestionConfig --> RecordMapper
+SourceIngestionConfig --> Validator
+SourceIngestionConfig --> InvalidRecordSink
+SourceIngestionConfig --> ProcessingPipeline
+SourceIngestionConfig --> Writer
+
+RecordIngestionService --> SourceIngestionConfig
+RecordIngestionService --> ValidationError
+RecordIngestionService --> BusinessRecord
+StepFactory --> ProcessingStep
