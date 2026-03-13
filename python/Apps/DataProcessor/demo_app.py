@@ -212,7 +212,7 @@ def run_parallel_db_chunks_demo() -> None:
     """
     output_root = Path("./demo_parallel")
     table_names = [f"table_{idx}" for idx in range(1, 21)]
-    table_chunks = _chunked(table_names, 5)
+    table_chunks = _chunked(table_names, 5) #list[list[str]]
 
     services = [
         _build_db_chunk_service(table_names=chunk, chunk_id=i, output_root=output_root)
