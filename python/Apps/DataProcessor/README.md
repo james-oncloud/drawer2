@@ -318,3 +318,33 @@ This will give **very low execution times**.
 ---
 
 If you'd like, I can also show the **fastest Python Lambda JSON processing pattern (about 2–3× faster than typical code)** that many high-throughput pipelines use.
+
+# app/adapters
+
+
+```
+app/adapters is the infrastructure implementation layer in your hexagonal design.
+
+Purpose in one line: it contains the concrete code that talks to external systems and formats, while the core app depends only on interfaces in app/ports.
+
+What lives there
+input/
+db_reader.py: reads raw rows from DB fetch function
+json_file_reader.py: reads raw records from JSON/JSONL files
+mappers/
+record_mapper.py: converts raw dicts into BusinessRecord
+validators/
+record_validator.py: business-rule validation logic
+processing/
+step implementations (normalize currency, enrich counterparty, risk classification)
+output/
+invalid_record_writer.py: writes invalid records to local JSONL
+s3_json_writer.py: batches valid records and writes JSONL to S3
+Why this matters
+Keeps app/application orchestration clean and testable.
+Lets you swap implementations without changing core flow (e.g., replace file reader with Kafka reader, S3 writer with local writer).
+Makes responsibilities explicit:
+ports = contracts
+adapters = concrete implementations of those contracts.
+So app/adapters is where your system “touches the outside world.”
+```
