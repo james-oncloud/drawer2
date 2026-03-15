@@ -1,0 +1,23 @@
+{
+  "minimum_order_qty": 12,
+  "products": [
+    {
+      "id": "A-100",
+      "name": "Espresso Beans",
+      "current_stock": 8,
+      "expected_weekly_sales": 25
+    },
+    {
+      "id": "A-200",
+      "name": "Paper Cups (12oz)",
+      "current_stock": 130,
+      "expected_weekly_sales": 40
+    },
+    {
+      "id": "A-300",
+      "name": "Chocolate Syrup",
+      "current_stock": 5,
+      "expected_weekly_sales": 9
+    }
+  ]
+}
