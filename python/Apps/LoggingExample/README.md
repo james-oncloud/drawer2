@@ -169,6 +169,22 @@ The actual configuration logic lives in `app/__init__.py` inside `configure_logg
 
 If an invalid value is provided, the code falls back to `INFO` and emits a warning log.
 
+### Set log level in AWS Lambda Console
+
+You can configure logging level directly in the AWS UI (no code changes required):
+
+1. Open **AWS Lambda** and select your function.
+2. Open the **Configuration** tab.
+3. Go to **Environment variables** and click **Edit**.
+4. Add or update:
+   - Key: `LOG_LEVEL`
+   - Value: `DEBUG` (or `INFO`, `WARNING`, `ERROR`, `CRITICAL`)
+5. Click **Save**.
+6. Open the **Test** tab and run a test event.
+7. Open **Monitor** -> **View CloudWatch logs** to confirm the expected verbosity.
+
+This updates function configuration only, so you do not need to redeploy the zip/package.
+
 ### Change log level without redeploying code
 
 You can change verbosity by updating Lambda **configuration only** (environment variables), without uploading a new zip/package.
@@ -199,6 +215,15 @@ Notes:
 
 - this is a configuration change, not a code redeploy
 - new execution environments pick up the new value; existing warm environments may take a short time to rotate
+- if logs do not appear, verify the function execution role includes CloudWatch Logs permissions
+
+### Recommended setup defaults for AWS Python Lambda
+
+- start with `INFO` in production
+- use `DEBUG` only during active troubleshooting
+- include module logger names (`logging.getLogger(__name__)`) for source traceability
+- keep message templates stable for easier CloudWatch filtering
+- configure CloudWatch log retention in production environments
 
 Recommended practice:
 
@@ -206,8 +231,122 @@ Recommended practice:
 - temporarily switch to `DEBUG` for troubleshooting
 - keep warning/error paths concise and actionable
 
+## Configure Logger Method (Copy/Paste)
+
+Use this method in your Lambda project (for example in `app/__init__.py`):
+
+```python
+import logging
+import os
+from typing import Optional, Union
+
+
+def configure_logging(level: Optional[Union[int, str]] = None) -> None:
+    """
+    Configure root logging for AWS Lambda.
+
+    Priority:
+    1) explicit `level` argument
+    2) LOG_LEVEL environment variable
+    3) INFO default
+    """
+    resolved_level = _resolve_log_level(level)
+    root_logger = logging.getLogger()
+
+    # Lambda can reuse execution environments; avoid adding duplicate handlers.
+    if root_logger.handlers:
+        root_logger.setLevel(resolved_level)
+        return
+
+    logging.basicConfig(
+        level=resolved_level,
+        format="%(asctime)s %(levelname)s %(name)s - %(message)s",
+    )
+
+
+def _resolve_log_level(level: Optional[Union[int, str]]) -> int:
+    if level is None:
+        level = os.getenv("LOG_LEVEL", "INFO")
+
+    if isinstance(level, int):
+        return level
+
+    normalized = str(level).strip().upper()
+    parsed = logging.getLevelName(normalized)
+    if isinstance(parsed, int):
+        return parsed
+
+    # Fallback for invalid values
+    return logging.INFO
+```
+
+Use it in `lambda_function.py`:
+
+```python
+import logging
+from app import configure_logging
+
+configure_logging()
+logger = logging.getLogger(__name__)
+```
+
 ## Deploy Notes
 
 1. Zip this folder contents.
 2. In AWS Lambda, set runtime to Python 3.11 (or any Python 3 runtime you use).
 3. Set handler to `lambda_function.lambda_handler`.
+
+
+```
+import logging
+import os
+from typing import Optional, Union
+
+
+def configure_logging(level: Optional[Union[int, str]] = None) -> None:
+    """
+    Configure root logging for AWS Lambda.
+
+    Priority:
+    1) explicit `level` argument
+    2) LOG_LEVEL environment variable
+    3) INFO default
+    """
+    resolved_level = _resolve_log_level(level)
+    root_logger = logging.getLogger()
+
+    # Lambda can reuse execution environments; avoid adding duplicate handlers.
+    if root_logger.handlers:
+        root_logger.setLevel(resolved_level)
+        return
+
+    logging.basicConfig(
+        level=resolved_level,
+        format="%(asctime)s %(levelname)s %(name)s - %(message)s",
+    )
+
+
+def _resolve_log_level(level: Optional[Union[int, str]]) -> int:
+    if level is None:
+        level = os.getenv("LOG_LEVEL", "INFO")
+
+    if isinstance(level, int):
+        return level
+
+    normalized = str(level).strip().upper()
+    parsed = logging.getLevelName(normalized)
+    if isinstance(parsed, int):
+        return parsed
+
+    # Fallback for invalid values
+    return logging.INFO
+```
+
+Example:
+```
+import logging
+from app import configure_logging
+
+configure_logging()
+logger = logging.getLogger(__name__)
+```
