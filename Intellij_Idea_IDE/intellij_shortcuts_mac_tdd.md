@@ -1,5 +1,29 @@
 ## IntelliJ IDEA — macOS Shortcuts for Java / Scala Development
 
+
+# 🔎 IDE FLOW
+```
+⇧ ⇧     → search everywhere
+⌥ ⌘ B   → go to implementation
+⌘ ⌥ ←   → navigate back
+⌘ ⌥ →   → navigate forward
+⌥ ⏎     → quick fix / intention actions / static import
+⌘ /     → toggle line comment
+⌘ D     → duplicate line
+⌘ N     → generate code (constructor / getter / setter)
+⌥ ⌘ O   → optimize imports
+⌥ ⌘ L   → reformat code
+⌃ R     → run current class/test
+
+⌥ ⏎     → select copilot
+⌥ ⇧     → move line
+⌘ ⌫     → delete line
+⌘ ⌥     → rename variable
+⌘ C     → highlight line
+
+
+```
+
 ### Quick Reference (TDD / Pair Programming)
 
 ---

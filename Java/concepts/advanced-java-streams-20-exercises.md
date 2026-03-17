@@ -395,3 +395,9 @@ Dashboard dashboard = orders.stream().collect(
 - Validate assumptions with tiny datasets first.
 - Use `groupingBy`, `mapping`, `flatMapping`, `collectingAndThen`, `teeing`.
 - Measure performance before choosing `parallelStream()`.
+
+
+## ToDo
+- IntSummaryStatistics
+- Custom Collectors
+
