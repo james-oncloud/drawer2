@@ -10,7 +10,7 @@ Open any file and **force yourself to use shortcuts only** (no mouse):
 
 * ⇧ ⇧ → search a class
 * ⌘ ⌥ ← / → → move back & forward
-* ⌃ R → run something
+* ⇧ ⌃ R → run something
 
 👉 Goal: “navigation mindset”
 
@@ -27,7 +27,7 @@ Create a small dummy class and repeat this flow **every day**:
 5. ⌘ D → duplicate lines
 6. ⌥ ⇧ ↑/↓ → move lines
 7. ⌘ ⌫ → delete lines
-8. ⌘ ⌥ (rename) → rename variable
+8. ⌘ ⌥ R (rename) → rename variable
 
 👉 Do this **same sequence daily** → builds muscle memory fast
 
@@ -37,7 +37,7 @@ Create a small dummy class and repeat this flow **every day**:
 
 After editing anything:
 
-* ⌥ ⌘ O → optimize imports
+* ⌃ ⌥ O → optimize imports
 * ⌥ ⌘ L → reformat
 
 👉 Make this **automatic at the end of every change**
@@ -75,8 +75,8 @@ Group them mentally:
 * **Navigation** → ⇧⇧, ⌘⌥← →
 * **Editing** → ⌘D, ⌘⌫, ⌥⇧
 * **Fixing** → ⌥⏎
-* **Cleanup** → ⌥⌘O, ⌥⌘L
-* **Run** → ⌃R
+* **Cleanup** → ⌃⌥O, ⌥⌘L
+* **Run** → ⇧⌃R
 
 👉 Brain remembers **clusters, not lists**
 
