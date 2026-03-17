@@ -1,0 +1,33 @@
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build/distribution artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test/coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# IDE/editor
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# App-generated outputs
+demo/
+invalid/
