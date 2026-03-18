@@ -1,62 +1,60 @@
 Here’s a **simple, repeatable daily routine (10–15 mins)** to lock these into muscle memory:
 
 ---
+## Remember
+| Shortcut                  | Shortcut                  |
+| -----------               | -----------               |
+| → search a class          | → move back & forward     |
+| → run something           |                           |
+| ========================= | ========================= |
+| → generate constructor    | → fix/import something    |
+| → comment/uncomment       | → duplicate lines         |
+| → move lines              | → delete lines            |
+| → rename variable         |                           |
+| ========================= | ========================= |
+| → optimize imports        | → reformat code           |
+| → select project panel    |                           |
+|                           |                           |
+
+
 
 ## 🔁 Daily Routine (do this every coding session)
 
 ### 1. 🔥 Warm-up (2 mins)
 
-Open any file and **force yourself to use shortcuts only** (no mouse):
-
+**force yourself to use shortcuts only**:
 * ⇧ ⇧ → search a class
-* ⌘ ⌥ ← / → → move back & forward
+* ⌥ ⌘ ← / → → move back & forward
 * ⇧ ⌃ R → run something
-
-👉 Goal: “navigation mindset”
-
----
 
 ### 2. ✍️ Editing drill (5 mins)
 
-Create a small dummy class and repeat this flow **every day**:
-
-1. Type a simple class
-2. ⌘ N → generate constructor
-3. ⌥ ⏎ → fix/import something
-4. ⌘ / → comment/uncomment
-5. ⌘ D → duplicate lines
-6. ⌥ ⇧ ↑/↓ → move lines
-7. ⌘ ⌫ → delete lines
-8. ⌘ ⌥ R (rename) → rename variable
-
-👉 Do this **same sequence daily** → builds muscle memory fast
-
----
+**repeat every day**:
+* ⌘ N → generate constructor
+* ⌥ ⏎ → fix/import something
+* ⌘ / → comment/uncomment
+* ⌘ D → duplicate lines
+* ⇧ ⌥ ↑/↓ → move lines
+* ⌘ ⌫ → delete lines
+* ⌥ ⌘ R (rename) → rename variable
 
 ### 3. 🧼 Cleanup habit (2 mins)
 
-After editing anything:
-
 * ⌃ ⌥ O → optimize imports
-* ⌥ ⌘ L → reformat
+* ⌥ ⌘ L → reformat code
+**automatic at the end of every change**
 
-👉 Make this **automatic at the end of every change**
-
----
+### No Mouse
+* ⌘ 1 ↑/↓ → select project panel
 
 ### 4. 🧠 “One new shortcut focus” (2–3 mins)
 
 Pick **1 shortcut per day** and overuse it:
 
 Example:
-
 * Day 1 → ⌥ ⏎ (use it constantly)
 * Day 2 → ⌘ N
 * Day 3 → ⌘ ⌥ ← / →
-
-👉 Don’t try to master all at once
-
----
 
 ### 5. 🚫 Constraint rule (all day)
 
@@ -72,8 +70,8 @@ No mouse fallback.
 
 Group them mentally:
 
-* **Navigation** → ⇧⇧, ⌘⌥← →
-* **Editing** → ⌘D, ⌘⌫, ⌥⇧
+* **Navigation** → ⇧⇧, ⌥⌘← →
+* **Editing** → ⌘D, ⌘⌫, ⇧⌥
 * **Fixing** → ⌥⏎
 * **Cleanup** → ⌃⌥O, ⌥⌘L
 * **Run** → ⇧⌃R

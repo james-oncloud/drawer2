@@ -10,9 +10,9 @@ class GreetingServiceTest {
     void greetReturnsExpectedMessage() {
         GreetingService service = new GreetingService("Hi");
 
-        String result = service.greet("James");
+        String result1 = service.greet("James");
 
-        assertThat(result).isEqualTo("Hi, James!");
+        assertThat(result1).isEqualTo("Hi, James!");
         assertThat(service.getPrefix()).isEqualTo("Hi");
     }
 }
