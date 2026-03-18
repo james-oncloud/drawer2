@@ -10,9 +10,9 @@ Here’s a **simple, repeatable daily routine (10–15 mins)** to lock these int
 | → generate constructor    | → fix/import something    |
 | → comment/uncomment       | → duplicate lines         |
 | → move lines              | → delete lines            |
-| → rename variable         |                           |
+| → rename variable         | → go to declaration       |
 | ========================= | ========================= |
-| → optimize imports        | → reformat code           |
+| → optimize imports        | → reformat code          |
 | → select project panel    |                           |
 |                           |                           |
 
@@ -37,6 +37,7 @@ Here’s a **simple, repeatable daily routine (10–15 mins)** to lock these int
 * ⇧ ⌥ ↑/↓ → move lines
 * ⌘ ⌫ → delete lines
 * ⌥ ⌘ R (rename) → rename variable
+* ⌘ B → go to declaration
 
 ### 3. 🧼 Cleanup habit (2 mins)
 
