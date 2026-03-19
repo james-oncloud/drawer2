@@ -1,0 +1,69 @@
+mindmap
+  root((Microservices Monitoring and Logging))
+    Core Methods
+      Metrics
+      Centralized Logs
+      Distributed Tracing
+      Alerting
+      Dashboards
+      Health and Synthetic Checks
+    Tool Categories
+      Metrics and Scraping
+        Prometheus
+        StatsD / Telegraf
+        OpenTelemetry Collector
+      Visualization
+        Grafana
+        Kibana
+        Datadog
+      Logging Pipeline
+        ELK
+        EFK
+        Loki + Promtail
+        Splunk
+      Tracing and APM
+        Jaeger
+        Zipkin
+        OpenTelemetry SDK
+        New Relic / Datadog APM / Dynatrace
+      Alerting and Incident
+        Alertmanager
+        PagerDuty / Opsgenie
+        Grafana Alerting
+      K8s and Infrastructure
+        Metrics Server
+        kube-state-metrics
+        Node Exporter / cAdvisor
+        CloudWatch / Azure Monitor / GCP Monitoring
+      Service Mesh
+        Istio + Kiali
+        Linkerd Viz
+      Uptime and Synthetic
+        Uptime Kuma / Pingdom / Uptrends
+        Grafana Synthetic Monitoring / Checkly
+    Recommended Baseline
+      OpenTelemetry instrumentation
+      Structured logs with trace IDs
+      Prometheus + Grafana
+      Loki or ELK/EFK for logs
+      Jaeger or managed APM
+      Alert routing and SLO burn-rate alerts
+    Data Fields
+      service.name
+      service.version
+      deployment.environment
+      region
+      trace_id
+      span_id
+      http.method
+      http.route
+      http.status_code
+      error.type
+      customer_tier
+    Pitfalls
+      Missing correlation IDs
+      Unstructured logs
+      Noisy alerts
+      Ignoring user SLIs
+      Short retention
+      Sensitive data in logs

@@ -12,8 +12,8 @@ Here’s a **simple, repeatable daily routine (10–15 mins)** to lock these int
 | → move lines              | → delete lines            |
 | → rename variable         | → go to declaration       |
 | ========================= | ========================= |
-| → optimize imports        | → reformat code          |
-| → select project panel    |                           |
+| → optimize imports        | → reformat code           |
+| → select project panel    | → select run panel        |
 |                           |                           |
 
 
@@ -47,6 +47,7 @@ Here’s a **simple, repeatable daily routine (10–15 mins)** to lock these int
 
 ### No Mouse
 * ⌘ 1 ↑/↓ → select project panel
+* ⌘ 4 ↑/↓ → select run panel
 
 ### 4. 🧠 “One new shortcut focus” (2–3 mins)
 
