@@ -1,16 +1,7 @@
-import type { PantryCategory, PantryItem } from './types'
+const ORDER = ['produce', 'dairy', 'pantry', 'frozen']
 
-export interface InsightsPanelProps {
-  items: PantryItem[]
-}
-
-const ORDER: PantryCategory[] = ['produce', 'dairy', 'pantry', 'frozen']
-
-/**
- * Loaded with React.lazy + Suspense in App.tsx to demonstrate code splitting:
- * this module can ship in a separate chunk until the user opens "Insights".
- */
-export default function InsightsPanel({ items }: InsightsPanelProps) {
+/** Default export for React.lazy() code splitting */
+export default function InsightsPanel({ items }) {
   const active = items.filter((i) => !i.consumed)
   const counts = ORDER.map((cat) => ({
     cat,

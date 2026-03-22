@@ -1,30 +1,18 @@
 import { memo } from 'react'
-import type { PantryItem } from '../types'
 
-export interface PantryItemRowProps {
-  item: PantryItem
-  urgency: 'ok' | 'soon' | 'overdue'
-  onToggleConsumed: (id: string) => void
-  onRemove: (id: string) => void
-}
-
-function urgencyLabel(u: PantryItemRowProps['urgency']): string {
+function urgencyLabel(u) {
   if (u === 'overdue') return 'Past date'
   if (u === 'soon') return 'Use soon'
   return 'On track'
 }
 
-/**
- * React.memo: shallow-compares props so the row skips re-render when unrelated
- * list state changes (e.g. typing in the add form), as long as callbacks
- * from the parent are stabilized with useCallback.
- */
+/** memo + stable callbacks from parent (useCallback in App) */
 export const PantryItemRow = memo(function PantryItemRow({
   item,
   urgency,
   onToggleConsumed,
   onRemove,
-}: PantryItemRowProps) {
+}) {
   return (
     <li
       className={`pantry-row pantry-row--${urgency}${item.consumed ? ' pantry-row--done' : ''}`}

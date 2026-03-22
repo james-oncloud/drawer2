@@ -1,25 +1,29 @@
-import type { FilterCategory, SortKey } from '../types'
+const FILTERS = ['all', 'produce', 'dairy', 'pantry', 'frozen']
 
-const FILTERS: FilterCategory[] = ['all', 'produce', 'dairy', 'pantry', 'frozen']
+const SORT_OPTIONS = [
+  ['expiry', 'By date'],
+  ['name', 'By name'],
+]
 
-export interface FilterToolbarProps {
-  filterCategory: FilterCategory
-  sortKey: SortKey
-  onFilterChange: (f: FilterCategory) => void
-  onSortChange: (s: SortKey) => void
-}
-
-/** Presentational component: no local state — fully controlled by parent (single source of truth). */
+/** Presentational: controlled solely via props (no local useState). */
 export function FilterToolbar({
   filterCategory,
   sortKey,
   onFilterChange,
   onSortChange,
-}: FilterToolbarProps) {
+}) {
   return (
     <div className="toolbar card">
       <div className="toolbar__group">
         <span className="toolbar__label">Filter</span>
+        
+        <input
+          type="text"
+          value={filterCategory}
+          onChange={(e) => onFilterChange(e.target.value)}
+          placeholder="Filter by category"
+        />
+
         <div className="chip-row">
           {FILTERS.map((f) => (
             <button
@@ -36,12 +40,7 @@ export function FilterToolbar({
       <div className="toolbar__group">
         <span className="toolbar__label">Sort</span>
         <div className="chip-row">
-          {(
-            [
-              ['expiry', 'By date'],
-              ['name', 'By name'],
-            ] as const
-          ).map(([key, label]) => (
+          {SORT_OPTIONS.map(([key, label]) => (
             <button
               key={key}
               type="button"

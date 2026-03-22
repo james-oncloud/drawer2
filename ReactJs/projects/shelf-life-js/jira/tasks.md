@@ -1,6 +1,6 @@
 # Shelf Life — practice backlog
 
-Use these as **self-paced exercises** to refresh React: implement in the existing `shelf-life` app, keep commits small, and note which hooks or patterns you used.
+Use these as **self-paced exercises** to refresh React: implement in **`shelf-life-js`** (or the TypeScript twin `shelf-life-ts`), keep commits small, and note which hooks or patterns you used.
 
 Difficulty is relative; “medium” usually means more state, edge cases, or a new boundary (context, route, or test).
 
@@ -36,7 +36,7 @@ Difficulty is relative; “medium” usually means more state, edge cases, or a 
 
 2. **Recipes mode (lazy route or tab)** — Second “page” or panel: link pantry items to a simple recipe (name + ingredient ids). Use **`React.lazy` + `Suspense`** or a minimal client router; practice lifting recipe state or a small second reducer.
 
-3. **Custom hook `usePantry()`** — Move reducer + persistence + derived `visibleItems` into `hooks/usePantry.ts`; `App` becomes mostly layout. Document the public API of the hook.
+3. **Custom hook `usePantry()`** — Move reducer + persistence + derived `visibleItems` into `hooks/usePantry.js` (or `.ts`); `App` becomes mostly layout. Document the public API of the hook.
 
 4. **`useReducer` + middleware-style logging** — Wrap dispatch to log actions in dev (or to `sessionStorage` ring buffer) without changing reducer purity.
 
@@ -62,7 +62,8 @@ Start with **search**, **document title**, and **relative dates** (mostly `useMe
 
 ## Done?
 
-When you finish a task, add a checkbox line under a new “Completed” section at the bottom of this file, or track however you prefer (GitHub issues, etc.).
+When you finish a task, add a checkbox line under **Completed** below, or track however you prefer (GitHub issues, etc.).
 
 ## Completed
-- 
+
+-

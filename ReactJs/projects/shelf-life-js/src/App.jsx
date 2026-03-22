@@ -13,19 +13,17 @@ import { FilterToolbar } from './components/FilterToolbar'
 import { PantryItemRow } from './components/PantryItemRow'
 import { useTheme } from './context/useTheme'
 import { getInitialPantryState, pantryReducer, persistPantryState } from './pantryReducer'
-import type { FilterCategory, PantryItem, SortKey } from './types'
 
-/** Code splitting: the insights chunk loads only when the user opens the panel */
 const InsightsPanel = lazy(() => import('./InsightsPanel'))
 
-function daysFromToday(iso: string): number {
+function daysFromToday(iso) {
   const target = new Date(`${iso}T12:00:00`)
   const today = new Date()
   today.setHours(12, 0, 0, 0)
   return Math.round((target.getTime() - today.getTime()) / 86_400_000)
 }
 
-function urgencyFor(iso: string): 'ok' | 'soon' | 'overdue' {
+function urgencyFor(iso) {
   const d = daysFromToday(iso)
   if (d < 0) return 'overdue'
   if (d <= 3) return 'soon'
@@ -33,15 +31,8 @@ function urgencyFor(iso: string): 'ok' | 'soon' | 'overdue' {
 }
 
 /**
- * Shelf Life — pantry / best-by tracker.
- *
- * React concepts demonstrated in this file:
- * - useReducer for related state + explicit transitions (vs many useState calls)
- * - useMemo for derived data (filtered + sorted list) to avoid recomputing every render
- * - useCallback so memoized children (PantryItemRow) keep stable function identities
- * - useEffect to sync state to localStorage (side effect outside render)
- * - lazy + Suspense for async component loading
- * - Composition: small presentational pieces + context for theme (see ThemeProvider in main)
+ * Shelf Life — same feature set as the TypeScript variant, implemented with
+ * modern JavaScript (ES modules, arrow functions, destructuring, spread).
  */
 export default function App() {
   const { theme, toggleTheme } = useTheme()
@@ -50,40 +41,48 @@ export default function App() {
 
   const [insightsOpen, setInsightsOpen] = useState(false)
 
-  // Persistence effect: runs after paint when pantry state changes
   useEffect(() => {
     persistPantryState(state)
   }, [state])
 
-  const handleAdd = useCallback(
-    (fields: Omit<PantryItem, 'id'>) => {
-      dispatch({
-        type: 'ADD_ITEM',
-        item: {
-          ...fields,
-          id: crypto.randomUUID(),
-          consumed: fields.consumed ?? false,
-        },
-      })
+  const handleAdd = useCallback((fields) => {
+    dispatch({
+      type: 'ADD_ITEM',
+      item: {
+        ...fields,
+        id: crypto.randomUUID(),
+        consumed: fields.consumed ?? false,
+      },
+    })
+  }, [dispatch])
+
+  const handleToggle = useCallback(
+    (id) => {
+      dispatch({ type: 'TOGGLE_CONSUMED', id })
     },
-    [],
+    [dispatch],
   )
 
-  const handleToggle = useCallback((id: string) => {
-    dispatch({ type: 'TOGGLE_CONSUMED', id })
-  }, [])
+  const handleRemove = useCallback(
+    (id) => {
+      dispatch({ type: 'REMOVE_ITEM', id })
+    },
+    [dispatch],
+  )
 
-  const handleRemove = useCallback((id: string) => {
-    dispatch({ type: 'REMOVE_ITEM', id })
-  }, [])
+  const handleFilter = useCallback(
+    (filter) => {
+      dispatch({ type: 'SET_FILTER', filter })
+    },
+    [dispatch],
+  )
 
-  const handleFilter = useCallback((filter: FilterCategory) => {
-    dispatch({ type: 'SET_FILTER', filter })
-  }, [])
-
-  const handleSort = useCallback((sortKey: SortKey) => {
-    dispatch({ type: 'SET_SORT', sortKey })
-  }, [])
+  const handleSort = useCallback(
+    (sortKey) => {
+      dispatch({ type: 'SET_SORT', sortKey })
+    },
+    [dispatch],
+  )
 
   const visibleItems = useMemo(() => {
     let rows =
@@ -111,12 +110,12 @@ export default function App() {
     <div className="app">
       <header className="app__header">
         <div>
-          <p className="eyebrow">React feature tour</p>
+          <p className="eyebrow">React feature tour (JavaScript)</p>
           <h1>Shelf Life</h1>
           <p className="lede">
-            Track what is on your shelf and when to use it. The UI is intentionally small so the
-            code stays readable while showing real-world patterns: reducer state, derived lists,
-            context, suspense, and an error boundary.
+            Track what is on your shelf and when to use it. Same patterns as the TS version:
+            reducer, derived lists, context, suspense, and an error boundary — without type
+            annotations.
           </p>
         </div>
         <button
@@ -200,8 +199,7 @@ export default function App() {
 
       <footer className="app__footer">
         <p>
-          Open <code>src/App.tsx</code> and the files under <code>src/components/</code> for
-          inline notes on each technique.
+          Open <code>src/App.jsx</code> and <code>src/components/</code> for inline notes.
         </p>
       </footer>
     </div>

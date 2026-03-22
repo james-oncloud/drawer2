@@ -1,7 +1,8 @@
 # Dependencies
 node_modules
 
-# Vite build output
+# Vite
+.vite
 dist
 dist-ssr
 
@@ -19,7 +20,6 @@ lerna-debug.log*
 
 # Test / tooling
 coverage
-*.tsbuildinfo
 .eslintcache
 
 # Editor directories and files

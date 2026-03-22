@@ -1,32 +1,21 @@
-import { Component, type ErrorInfo, type ReactNode } from 'react'
-
-interface Props {
-  children: ReactNode
-  /** Optional fallback UI when a child throws during render */
-  fallback?: ReactNode
-}
-
-interface State {
-  hasError: boolean
-  message?: string
-}
+import { Component } from 'react'
 
 /**
- * Error boundaries must be class components (there is no hook equivalent yet).
- * Catches render errors in the subtree and prevents the whole app from unmounting.
+ * Error boundaries must be class components.
+ * ES6 class + static getDerivedStateFromError.
  */
-export class ErrorBoundary extends Component<Props, State> {
-  state: State = { hasError: false }
+export class ErrorBoundary extends Component {
+  state = { hasError: false, message: undefined }
 
-  static getDerivedStateFromError(error: Error): State {
+  static getDerivedStateFromError(error) {
     return { hasError: true, message: error.message }
   }
 
-  componentDidCatch(error: Error, info: ErrorInfo): void {
+  componentDidCatch(error, info) {
     console.error('ErrorBoundary caught:', error, info.componentStack)
   }
 
-  render(): ReactNode {
+  render() {
     if (this.state.hasError) {
       return (
         this.props.fallback ?? (

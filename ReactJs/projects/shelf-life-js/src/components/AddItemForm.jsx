@@ -1,28 +1,22 @@
-import { useId, useRef, useState, type FormEvent } from 'react'
-import type { PantryCategory, PantryItem } from '../types'
+import { useId, useRef, useState } from 'react'
 
-const CATEGORIES: PantryCategory[] = ['produce', 'dairy', 'pantry', 'frozen']
-
-export interface AddItemFormProps {
-  onAdd: (item: Omit<PantryItem, 'id'>) => void
-}
+const CATEGORIES = ['produce', 'dairy', 'pantry', 'frozen']
 
 /**
- * Controlled components: React is the source of truth for inputs (value + onChange).
- * useId: generates stable ids for label/input association (accessibility + SSR-safe).
- * useRef: imperative focus after submit without extra re-renders from state.
+ * Controlled inputs (useState + value/onChange).
+ * useId for a11y; useRef to focus after submit.
  */
-export function AddItemForm({ onAdd }: AddItemFormProps) {
+export function AddItemForm({ onAdd }) {
   const nameId = useId()
   const categoryId = useId()
   const dateId = useId()
 
-  const nameRef = useRef<HTMLInputElement>(null)
+  const nameRef = useRef(null)
   const [name, setName] = useState('')
-  const [category, setCategory] = useState<PantryCategory>('produce')
+  const [category, setCategory] = useState('produce')
   const [expiryISO, setExpiryISO] = useState(() => new Date().toISOString().slice(0, 10))
 
-  function handleSubmit(e: FormEvent) {
+  function handleSubmit(e) {
     e.preventDefault()
     const trimmed = name.trim()
     if (!trimmed) {
@@ -62,7 +56,7 @@ export function AddItemForm({ onAdd }: AddItemFormProps) {
           <select
             id={categoryId}
             value={category}
-            onChange={(e) => setCategory(e.target.value as PantryCategory)}
+            onChange={(e) => setCategory(e.target.value)}
           >
             {CATEGORIES.map((c) => (
               <option key={c} value={c}>

@@ -1,25 +1,18 @@
-import type { FilterCategory, PantryItem, SortKey } from './types'
-
-/** Central state for the pantry: items plus UI filter/sort (useReducer showcase). */
-export interface PantryState {
-  items: PantryItem[]
-  filterCategory: FilterCategory
-  sortKey: SortKey
-}
-
-export type PantryAction =
-  | { type: 'ADD_ITEM'; item: PantryItem }
-  | { type: 'REMOVE_ITEM'; id: string }
-  | { type: 'TOGGLE_CONSUMED'; id: string }
-  | { type: 'SET_FILTER'; filter: FilterCategory }
-  | { type: 'SET_SORT'; sortKey: SortKey }
+/**
+ * Pantry state: items + filter/sort (useReducer).
+ *
+ * Domain shapes (plain objects, documented for readability):
+ * - PantryItem: { id, name, category, expiryISO, consumed }
+ * - category: 'produce' | 'dairy' | 'pantry' | 'frozen'
+ * - filterCategory: category | 'all'
+ * - sortKey: 'expiry' | 'name'
+ */
 
 const STORAGE_KEY = 'shelf-life-pantry-v1'
 
-/** Starter data when localStorage is empty — makes the demo usable immediately */
-function seedItems(): PantryItem[] {
+function seedItems() {
   const today = new Date()
-  const addDays = (d: number) => {
+  const addDays = (d) => {
     const t = new Date(today)
     t.setDate(t.getDate() + d)
     return t.toISOString().slice(0, 10)
@@ -49,25 +42,21 @@ function seedItems(): PantryItem[] {
   ]
 }
 
-function readStoredState(): Partial<PantryState> | null {
+function readStoredState() {
   if (typeof window === 'undefined') return null
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY)
     if (!raw) return null
-    const parsed = JSON.parse(raw) as unknown
+    const parsed = JSON.parse(raw)
     if (!parsed || typeof parsed !== 'object') return null
-    return parsed as Partial<PantryState>
+    return parsed
   } catch {
     return null
   }
 }
 
-/**
- * Lazy initializer for useReducer — runs once on mount.
- * Shows the "function form" of initial state when the value is expensive or
- * depends on browser APIs (here, localStorage).
- */
-export function getInitialPantryState(): PantryState {
+/** Lazy initializer for useReducer (runs once): reads localStorage or seeds demo data */
+export function getInitialPantryState() {
   const stored = readStoredState()
   if (stored?.items && Array.isArray(stored.items) && stored.items.length > 0) {
     return {
@@ -83,7 +72,7 @@ export function getInitialPantryState(): PantryState {
   }
 }
 
-export function pantryReducer(state: PantryState, action: PantryAction): PantryState {
+export function pantryReducer(state, action) {
   switch (action.type) {
     case 'ADD_ITEM':
       return { ...state, items: [action.item, ...state.items] }
@@ -105,8 +94,7 @@ export function pantryReducer(state: PantryState, action: PantryAction): PantryS
   }
 }
 
-/** Single write path keeps items + UI prefs in sync across reloads */
-export function persistPantryState(state: PantryState): void {
+export function persistPantryState(state) {
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
   } catch {
