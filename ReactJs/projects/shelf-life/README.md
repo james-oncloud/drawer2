@@ -26,6 +26,55 @@ npm install
 
 There is no `.env` file in this sample; all configuration is code and standard Vite/TS settings (see [App configuration](#app-configuration)).
 
+## App user guide
+
+Shelf Life helps you track pantry items and their **best-by dates** in the browser. Nothing is sent to a server; your list and preferences stay on this device (see [Client-side persistence](#client-side-persistence)).
+
+### First visit
+
+On a fresh browser profile (or after clearing storage), the app loads a few **sample items** so you can explore filters and sorting immediately. Your changes replace that data as soon as you add, edit, or remove items and the app saves.
+
+### Add an item
+
+1. In **Add item**, enter a **name** (required).
+2. Choose a **category**: produce, dairy, pantry, or frozen.
+3. Set **Best-by date** with the date picker.
+4. Click **Add to shelf**. The new row appears at the top of the list, and the name field is focused again for quick entry.
+
+### Your shelf (list)
+
+Each row shows:
+
+- **Status control** (circle / check): tap to mark an item as **used** or not used. Used rows look faded but stay in the list until you remove them.
+- **Name**, **category** tag, and **Best by** date.
+- **Urgency pill** (computed from today’s date and the best-by date):
+  - **On track** — more than three days before the best-by date.
+  - **Use soon** — best-by date is **today or within the next three days**.
+  - **Past date** — best-by date is **before today**.
+
+Use **Remove** to delete a row permanently.
+
+Above the list, the **summary** counts **active** items (not marked used), plus how many are **use soon** or **overdue** (past date).
+
+### Filter and sort
+
+- **Filter** chips restrict the list to one category or **all**.
+- **Sort** switches between **By date** (earliest best-by first) and **By name** (A–Z).
+
+If nothing matches the current filter, you’ll see a short empty message—widen the filter or add an item.
+
+### Theme
+
+Use **Dark theme** / **Light theme** in the header to switch palettes. The choice is remembered for this browser.
+
+### Insights chart
+
+Open **Insights**, then click **Show chart**. A simple bar view compares how many **active** (not used) items you have in each category. Click **Hide chart** to collapse it and avoid loading that panel until you need it again.
+
+### If something breaks in the list
+
+The shelf area is wrapped in an error boundary. If a render error occurs there, you’ll see a short message and **Try again** instead of losing the whole page.
+
 ## App architecture
 
 ### High-level shape
