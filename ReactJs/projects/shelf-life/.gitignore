@@ -1,3 +1,13 @@
+# Dependencies
+node_modules
+
+# Vite build output
+dist
+dist-ssr
+
+# Secrets and machine-specific overrides (see Vite env loading)
+*.local
+
 # Logs
 logs
 *.log
@@ -7,10 +17,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Test / tooling
+coverage
+*.tsbuildinfo
+.eslintcache
 
 # Editor directories and files
 .vscode/*
