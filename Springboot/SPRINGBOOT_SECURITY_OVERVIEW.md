@@ -2,6 +2,15 @@
 
 Spring Boot Security is built on top of **Spring Security**, a powerful and highly customizable framework for securing Java applications. Spring Boot makes it easy to get started with sensible defaults, while still allowing fine-grained control over authentication, authorization, and protection mechanisms.
 
+## Key Concepts Review
+
+- **Authentication** answers "who are you?" by verifying credentials or tokens.
+- **Authorization** answers "what are you allowed to do?" by applying URL or method-level rules.
+- **`SecurityFilterChain`** is the central place where HTTP security behavior is defined.
+- **`UserDetailsService`** loads users, while a **`PasswordEncoder`** safely handles password hashing.
+- **Stateful browser apps** and **stateless APIs** usually need different security settings, especially for sessions and CSRF.
+- **Secure-by-default behavior** is intentional: Boot locks things down first, then you explicitly open what should be public.
+
 ---
 
 ## 1) Getting Started: The Starter
@@ -18,6 +27,8 @@ When `spring-boot-starter-security` is on the classpath, Spring Boot:
 - Enables form login with a default login page
 - Creates an in-memory user with a generated password (printed to the console at startup)
 - Uses an in-memory `UserDetailsService` unless you provide your own
+
+These defaults are useful for quickly securing a new app, but most real applications replace them with custom users, password encoding, and authorization rules.
 
 ---
 
@@ -55,6 +66,15 @@ public UserDetailsService users() {
 
 > ⚠️ `withDefaultPasswordEncoder()` is only for demos. Use a `PasswordEncoder` like `BCryptPasswordEncoder` in real applications.
 
+Recommended password encoder bean:
+
+```java
+@Bean
+public PasswordEncoder passwordEncoder() {
+    return new BCryptPasswordEncoder();
+}
+```
+
 ---
 
 ## 3) Authorization (What can you do?)
@@ -81,6 +101,8 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 }
 ```
 
+Matcher order matters. Spring Security evaluates these rules in order, so more specific matchers should usually come before broader ones like `anyRequest()`.
+
 ### Method security
 Enable method security with:
 ```java
@@ -94,6 +116,8 @@ Then secure service methods:
 @PreAuthorize("hasRole('ADMIN')")
 public void adminOnlyAction() { ... }
 ```
+
+Method security is especially useful when authorization should follow business rules rather than only URL patterns.
 
 ---
 
@@ -111,6 +135,8 @@ You can also disable auto-configuration:
 ```properties
 spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 ```
+
+Disabling security auto-configuration entirely is rarely the best first step. In most applications, it is safer to keep security enabled and customize the rules instead.
 
 ---
 
@@ -151,6 +177,12 @@ http.sessionManagement(session -> session
 );
 ```
 
+### 401 vs 403
+- `401 Unauthorized` usually means the request is not authenticated.
+- `403 Forbidden` means the user is authenticated but does not have permission.
+
+Understanding that distinction helps when debugging login problems versus access-control problems.
+
 ---
 
 ## 7) Actuator and Security
@@ -188,9 +220,29 @@ Use `NimbusJwtDecoder` and configure a `JwtAuthenticationConverter` to map claim
 4. Authorization rules are evaluated (URL/method access).
 5. The request is allowed or rejected (redirect / 401 / 403).
 
+For stateless APIs, authentication is typically reconstructed on every request from a bearer token instead of being loaded from an HTTP session.
+
 ---
 
-## 10) Why Use Spring Boot Security?
+## 10) Testing Security
+
+- Use `spring-security-test` for test support such as `@WithMockUser`
+- Use `MockMvc` for servlet applications and `WebTestClient` for reactive ones
+- Test both success cases and failure cases such as unauthenticated and forbidden requests
+
+Example:
+
+```java
+@Test
+@WithMockUser(roles = "ADMIN")
+void adminEndpointIsAccessibleToAdmins() {
+    // test code here
+}
+```
+
+---
+
+## 11) Why Use Spring Boot Security?
 
 - **Secure defaults**: Everything is locked down by default, which is safe for new apps.
 - **Auto-configuration**: Minimal boilerplate while still allowing fine-grained control.

@@ -2,6 +2,15 @@
 
 Spring Boot is an opinionated framework built on top of the Spring ecosystem that aims to simplify the setup, configuration, and development of Spring applications. It provides sensible defaults, auto-configuration, and production-ready capabilities so developers can focus more on business logic and less on boilerplate.
 
+## Key Concepts Review
+
+- **Convention over configuration** means Spring Boot supplies sensible defaults so you only configure what is different for your app.
+- **Auto-configuration** creates beans based on what is on the classpath and what you have already defined yourself.
+- **Starters** group related dependencies together so adding a capability usually means adding one dependency instead of many.
+- **The application context** is the IoC container that creates, wires, and manages beans during startup.
+- **Embedded servers** let most web apps run as standalone JARs without deploying to an external servlet container.
+- **Externalized configuration** keeps environment-specific values outside the code so the same build can run in multiple environments.
+
 ---
 
 ## 1) The Core Idea: Convention over Configuration
@@ -40,6 +49,16 @@ When `SpringApplication.run(...)` executes, Spring Boot:
 3. Performs auto-configuration based on the classpath and beans already defined.
 4. Starts an embedded web server (if a web application), and registers servlet components.
 
+### Why the `ApplicationContext` matters
+The `ApplicationContext` is the central Spring container. It is responsible for:
+- Creating beans
+- Injecting dependencies
+- Managing bean lifecycle callbacks
+- Publishing events
+- Providing access to configuration and profiles
+
+This is why Spring Boot startup is mostly about building and refreshing the context correctly.
+
 ---
 
 ## 3) Auto-Configuration (Magic + Override)
@@ -53,6 +72,8 @@ Spring Boot auto-configurations are typically guarded by conditional annotations
 - `@ConditionalOnProperty` (only if a property has a specific value)
 
 This allows you to override defaults simply by defining a bean in your own configuration or setting a property.
+
+In practice, this means Spring Boot is not "hard coded magic." It is conditional configuration that backs off when your application supplies a more specific choice.
 
 ---
 
@@ -72,9 +93,27 @@ spring.jpa.hibernate.ddl-auto=update
 ### Profiles
 You can activate profiles with `spring.profiles.active` (e.g., `application-dev.properties` or `application-prod.properties`). Profiles let you define environment-specific configuration.
 
+This is one of the main reasons Spring Boot applications are portable: the code stays the same while runtime behavior changes through external configuration.
+
 ---
 
-## 5) Building and Running
+## 5) Dependency Management and Starters
+
+Spring Boot does more than provide starter dependencies. It also manages compatible library versions through its dependency management support.
+
+- If you use the Spring Boot parent POM or Gradle plugin, many dependency versions are aligned automatically.
+- This reduces "dependency hell" because Boot chooses versions that are tested together.
+- Starters are designed around capabilities such as web, data, security, validation, and messaging.
+
+Example starters:
+- `spring-boot-starter-web`
+- `spring-boot-starter-data-jpa`
+- `spring-boot-starter-security`
+- `spring-boot-starter-test`
+
+---
+
+## 6) Building and Running
 
 ### Maven / Gradle
 Spring Boot provides plugins for Maven and Gradle to package the application as an executable JAR.
@@ -91,7 +130,7 @@ java -jar myapp.jar
 
 ---
 
-## 6) Common Spring Boot Features
+## 7) Common Spring Boot Features
 
 ### Web
 - `@RestController` / `@Controller` for request handling
@@ -110,7 +149,7 @@ Spring Boot Actuator exposes production-ready endpoints (health, metrics, info) 
 
 ---
 
-## 7) Extending and Customizing Behavior
+## 8) Extending and Customizing Behavior
 
 Spring Boot is designed to let you customize behavior by:
 - Defining beans to override auto-configured ones
@@ -120,7 +159,7 @@ Spring Boot is designed to let you customize behavior by:
 
 ---
 
-## 8) Typical Lifecycle
+## 9) Typical Lifecycle
 
 1. Start JVM
 2. `SpringApplication.run(...)`
@@ -131,12 +170,25 @@ Spring Boot is designed to let you customize behavior by:
 
 ---
 
-## 9) Why Use Spring Boot?
+## 10) Why Use Spring Boot?
 
 - Fast project setup with minimal boilerplate
 - Wide ecosystem (data, security, messaging, cloud, etc.)
 - Production-ready features out of the box (health checks, metrics, logging, config management)
 - Easy to deploy (single executable JAR)
+
+---
+
+## 11) Common Beginner Mental Model
+
+A useful way to think about Spring Boot is:
+
+1. Add a starter dependency for the feature you want.
+2. Boot detects that capability on the classpath.
+3. Boot auto-configures sensible beans for it.
+4. You override only the parts that need custom behavior.
+
+That pattern appears over and over in web, data, messaging, and security modules.
 
 ---
 

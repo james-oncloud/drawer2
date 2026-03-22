@@ -4,6 +4,15 @@ Spring WebFlux is the reactive web framework in Spring Framework (since 5.x) des
 
 This document explains the core concepts of WebFlux and the main WebFlux API components.
 
+## Key Concepts Review
+
+- **Reactive programming** models work as asynchronous streams instead of blocking, step-by-step calls.
+- **`Mono`** represents zero or one item, while **`Flux`** represents many items over time.
+- **Non-blocking I/O** allows threads to be reused instead of waiting idle for network or database calls.
+- **Backpressure** helps consumers control how quickly producers send data.
+- **WebFlux is most valuable when the whole request flow is non-blocking**, including HTTP clients and data access.
+- **Reactive code should avoid blocking calls** like `Thread.sleep()` or traditional blocking JDBC inside request pipelines.
+
 ---
 
 ## 1) Core Reactive Concepts
@@ -23,6 +32,8 @@ WebFlux uses non-blocking servers (Netty, Undertow, or the non-blocking servlet 
 
 ### Backpressure
 Backpressure allows consumers to request data at a pace they can handle, preventing overload.
+
+Reactive systems are not just about speed. They are mainly about scalability, efficient resource usage, and composing asynchronous workflows cleanly.
 
 ---
 
@@ -71,6 +82,8 @@ public RouterFunction<ServerResponse> routes(PersonHandler handler) {
         .build();
 }
 ```
+
+Both models are fully supported. Teams often choose annotated controllers for familiarity and functional routing for lightweight, explicit APIs.
 
 Handler example:
 
@@ -136,11 +149,15 @@ Mono<Person> person = client.get()
     .bodyToMono(Person.class);
 ```
 
+`WebClient` is the preferred replacement for `RestTemplate` in reactive applications because it supports non-blocking request execution and reactive composition.
+
 ### Reactive Data Access
 While not part of WebFlux, it integrates with reactive data libraries:
 - `spring-data-r2dbc` (Reactive Relational DB)
 - `spring-data-mongodb` (Reactive MongoDB)
 - `spring-data-redis` (Reactive Redis)
+
+If your controller is reactive but it calls blocking libraries underneath, you lose many of the benefits of WebFlux. End-to-end non-blocking design matters.
 
 ---
 
@@ -151,6 +168,8 @@ While not part of WebFlux, it integrates with reactive data libraries:
 3. **HandlerMapping** selects a handler (controller method or functional handler)
 4. Handler returns `Mono`/`Flux` (reactive pipeline)
 5. Response writing is deferred until the reactive stream completes
+
+Handlers should usually return the reactive type directly. In most cases, you should not manually call `subscribe()` inside controller or handler code.
 
 ---
 
@@ -164,6 +183,8 @@ While not part of WebFlux, it integrates with reactive data libraries:
 - Lightweight and explicit routing
 - Easier to compose in pure functional style
 - Ideal for microservices with simple routing needs
+
+The choice is usually about team style and maintainability, not performance. Both models use the same reactive runtime underneath.
 
 ---
 
@@ -179,7 +200,22 @@ While not part of WebFlux, it integrates with reactive data libraries:
 
 ---
 
-## 8) Testing WebFlux
+## 8) Blocking Work and Schedulers
+
+Blocking work still exists in many real systems, such as legacy drivers or file APIs. If blocking cannot be avoided, isolate it carefully instead of running it on the event-loop threads.
+
+Typical Reactor pattern:
+
+```java
+Mono.fromCallable(() -> blockingService.loadData())
+    .subscribeOn(Schedulers.boundedElastic());
+```
+
+This is a fallback, not the main goal. Prefer true reactive libraries when possible.
+
+---
+
+## 9) Testing WebFlux
 
 - `WebTestClient` is the reactive test client for WebFlux
 
@@ -201,9 +237,11 @@ class PersonControllerTest {
 }
 ```
 
+For lower-level reactive stream testing, Reactor also provides `StepVerifier`, which is useful for testing `Mono` and `Flux` behavior directly.
+
 ---
 
-## 9) Key WebFlux Components (Quick Reference)
+## 10) Key WebFlux Components (Quick Reference)
 
 - `org.springframework.web.reactive.function.server.RouterFunction`
 - `org.springframework.web.reactive.function.server.ServerRequest`
@@ -216,7 +254,18 @@ class PersonControllerTest {
 
 ---
 
-## 10) Why Use WebFlux?
+## 11) When WebFlux Is a Good Fit
+
+- High-concurrency APIs with lots of network I/O
+- Streaming endpoints such as server-sent events
+- Systems already using reactive databases, messaging, or clients
+- Applications where efficient thread usage matters more than simple imperative code
+
+WebFlux is not automatically better for every application. For simple CRUD apps with blocking libraries, Spring MVC is often the simpler choice.
+
+---
+
+## 12) Why Use WebFlux?
 
 - **Scale with fewer threads**: non-blocking I/O allows high concurrency
 - **Reactive data flow**: compose async operations with `Mono`/`Flux`
