@@ -1,0 +1,24 @@
+2026.03.27 10:38:41 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.03.27 10:38:40 WARN  no build tool detected in workspace '/Users/jamesking/work/drawer2/Springboot'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.03.27 10:38:41 WARN  Build server is not auto-connectable.
+2026.03.27 10:38:41 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/KibanaSampleApplication.java
+2026.03.27 10:38:43 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java
+2026.03.27 10:38:50 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java
+2026.03.27 10:38:58 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/test/java/com/example/kibanasample/KibanaSampleApplicationTests.java
+2026.03.27 10:38:58 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java
+2026.03.27 10:38:58 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java. Using fallback presentation compiler.
+2026.03.27 10:39:06 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/KibanaSampleApplication.java
+2026.03.27 10:39:06 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/KibanaSampleApplication.java. Using fallback presentation compiler.
+2026.03.27 10:39:12 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java
+2026.03.27 10:39:12 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
+2026.03.27 10:39:47 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
+2026.03.27 10:39:48 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
+2026.03.27 11:01:56 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java
+2026.03.27 11:01:56 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java. Using fallback presentation compiler.
+2026.03.27 11:01:57 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java
+2026.03.27 11:01:57 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/controller/OrderController.java. Using fallback presentation compiler.
+2026.03.27 11:01:58 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java
+2026.03.27 11:01:57 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
+2026.03.27 11:01:59 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java
+2026.03.27 11:01:59 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
+2026.03.27 11:02:04 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
