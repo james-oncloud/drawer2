@@ -596,3 +596,15 @@ Its most common use cases in Spring Boot microservices are:
 - investigating issues across multiple services
 
 Kibana is most valuable when your logs are structured, centralized, and enriched with useful fields like service name, trace ID, environment, and log level.
+
+
+## Logstash
+```bash
+docker run -d \
+  --name logstash \
+  --net somenetwork \
+  -p 5044:5044 \
+  -p 9600:9600 \
+  -v "/Users/jamesking/work/drawer2/Springboot/kibana/logstash/logstash.conf:ro" \
+  docker.elastic.co/logstash/logstash:8.13.4
+  ```

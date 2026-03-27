@@ -22,3 +22,18 @@
 2026.03.27 11:01:59 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java
 2026.03.27 11:01:59 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
 2026.03.27 11:02:04 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/main/java/com/example/kibanasample/service/OrderService.java. Using fallback presentation compiler.
+2026.03.27 15:55:09 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/kibana-sample-app/src/test/java/com/example/kibanasample/KibanaSampleApplicationTests.java. Using fallback presentation compiler.
+Mar 27, 2026 3:57:27 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.03.27 20:36:11 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java
+2026.03.27 20:36:31 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
+2026.03.27 20:37:14 WARN  no build target for: /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java
+2026.03.27 20:37:14 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
+2026.03.27 20:37:15 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
+Mar 27, 2026 8:37:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 75
+2026.03.27 20:37:23 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
+2026.03.27 20:37:23 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
+2026.03.27 20:37:23 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
+Mar 27, 2026 8:59:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

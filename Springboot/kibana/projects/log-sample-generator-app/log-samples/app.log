@@ -1,0 +1,39 @@
+2026-03-27 20:36:22.663  INFO [service=log-sample-generator,traceId=-,spanId=-] [main] com.example.logsample.LogSampleGeneratorApplication - Starting sample log generator for Kibana demos
+2026-03-27 20:36:22.682  INFO [service=log-sample-generator,traceId=1b75820498284e808ef744d7089d0cde,spanId=c7bc95d9d7744bfe] [main] null - Received request for order ORD-1001
+2026-03-27 20:36:22.687  INFO [service=log-sample-generator,traceId=1b75820498284e808ef744d7089d0cde,spanId=c7bc95d9d7744bfe] [main] null - Loading order ORD-1001 at 2026-03-27T20:36:22.682984Z
+2026-03-27 20:36:22.687  INFO [service=log-sample-generator,traceId=1b75820498284e808ef744d7089d0cde,spanId=c7bc95d9d7744bfe] [main] null - Successfully processed order ORD-1001
+2026-03-27 20:36:23.041  INFO [service=log-sample-generator,traceId=c6eae82808b4445cbcfb093e05f48869,spanId=06b91e6793c24e4c] [main] null - Received request for order ORD-1002
+2026-03-27 20:36:23.042  INFO [service=log-sample-generator,traceId=c6eae82808b4445cbcfb093e05f48869,spanId=06b91e6793c24e4c] [main] null - Loading order ORD-1002 at 2026-03-27T20:36:23.042694Z
+2026-03-27 20:36:23.043  INFO [service=log-sample-generator,traceId=c6eae82808b4445cbcfb093e05f48869,spanId=06b91e6793c24e4c] [main] null - Successfully processed order ORD-1002
+2026-03-27 20:36:23.490  INFO [service=log-sample-generator,traceId=df9d241d6a5a44f9850f4c95b2f0a4ca,spanId=da7e9717212b4177] [main] null - Received request for order ORD-1003
+2026-03-27 20:36:23.490  INFO [service=log-sample-generator,traceId=df9d241d6a5a44f9850f4c95b2f0a4ca,spanId=da7e9717212b4177] [main] null - Loading order ORD-1003 at 2026-03-27T20:36:23.490610Z
+2026-03-27 20:36:23.491  INFO [service=log-sample-generator,traceId=df9d241d6a5a44f9850f4c95b2f0a4ca,spanId=da7e9717212b4177] [main] null - Successfully processed order ORD-1003
+2026-03-27 20:36:23.933  INFO [service=log-sample-generator,traceId=d088dbdf9d9e4777bbc5317db5f1642d,spanId=de16c7e535f84ac9] [main] null - Received request for order ORD-1004
+2026-03-27 20:36:23.934  INFO [service=log-sample-generator,traceId=d088dbdf9d9e4777bbc5317db5f1642d,spanId=de16c7e535f84ac9] [main] null - Loading order ORD-1004 at 2026-03-27T20:36:23.934365Z
+2026-03-27 20:36:23.934  WARN [service=log-sample-generator,traceId=d088dbdf9d9e4777bbc5317db5f1642d,spanId=de16c7e535f84ac9] [main] null - Slow downstream dependency detected for order ORD-1004
+2026-03-27 20:36:23.935  INFO [service=log-sample-generator,traceId=d088dbdf9d9e4777bbc5317db5f1642d,spanId=de16c7e535f84ac9] [main] null - Successfully processed order ORD-1004
+2026-03-27 20:36:24.310  INFO [service=log-sample-generator,traceId=044d7e59c5534ce7b111ba0b484df21b,spanId=11afa4030f3347a5] [main] null - Received request for order ORD-1005
+2026-03-27 20:36:24.310  INFO [service=log-sample-generator,traceId=044d7e59c5534ce7b111ba0b484df21b,spanId=11afa4030f3347a5] [main] null - Loading order ORD-1005 at 2026-03-27T20:36:24.310489Z
+2026-03-27 20:36:24.310  INFO [service=log-sample-generator,traceId=044d7e59c5534ce7b111ba0b484df21b,spanId=11afa4030f3347a5] [main] null - Successfully processed order ORD-1005
+2026-03-27 20:36:24.718  INFO [service=log-sample-generator,traceId=c84dccb6f98640b7ac70ec4d94cdf20f,spanId=2005994baf2a4814] [main] null - Received request for order ORD-1006
+2026-03-27 20:36:24.718  INFO [service=log-sample-generator,traceId=c84dccb6f98640b7ac70ec4d94cdf20f,spanId=2005994baf2a4814] [main] null - Loading order ORD-1006 at 2026-03-27T20:36:24.718606Z
+2026-03-27 20:36:24.718  INFO [service=log-sample-generator,traceId=c84dccb6f98640b7ac70ec4d94cdf20f,spanId=2005994baf2a4814] [main] null - Successfully processed order ORD-1006
+2026-03-27 20:36:25.213  INFO [service=log-sample-generator,traceId=bb590edbc25d4c16bd0ce0059fb9956b,spanId=955d0a1c7a724cfd] [main] null - Received request for order ORD-1007
+2026-03-27 20:36:25.213  INFO [service=log-sample-generator,traceId=bb590edbc25d4c16bd0ce0059fb9956b,spanId=955d0a1c7a724cfd] [main] null - Loading order ORD-1007 at 2026-03-27T20:36:25.213950Z
+2026-03-27 20:36:25.218 ERROR [service=log-sample-generator,traceId=bb590edbc25d4c16bd0ce0059fb9956b,spanId=955d0a1c7a724cfd] [main] null - Failed to process order ORD-1007 due to simulated timeout
+2026-03-27 20:36:25.624  INFO [service=log-sample-generator,traceId=ae8d12562d41452bbb17d50480a0d090,spanId=2cbfe38416bb471c] [main] null - Received request for order ORD-1008
+2026-03-27 20:36:25.626  INFO [service=log-sample-generator,traceId=ae8d12562d41452bbb17d50480a0d090,spanId=2cbfe38416bb471c] [main] null - Loading order ORD-1008 at 2026-03-27T20:36:25.625912Z
+2026-03-27 20:36:25.626  WARN [service=log-sample-generator,traceId=ae8d12562d41452bbb17d50480a0d090,spanId=2cbfe38416bb471c] [main] null - Slow downstream dependency detected for order ORD-1008
+2026-03-27 20:36:25.627  INFO [service=log-sample-generator,traceId=ae8d12562d41452bbb17d50480a0d090,spanId=2cbfe38416bb471c] [main] null - Successfully processed order ORD-1008
+2026-03-27 20:36:25.952  INFO [service=log-sample-generator,traceId=-,spanId=-] [main] com.example.logsample.LogSampleGeneratorApplication - Finished generating sample logs in ./log-samples/app.log
+2026-03-27 20:36:35.608  INFO [service=log-sample-generator,traceId=-,spanId=-] [main] com.example.logsample.LogSampleGeneratorApplication - Starting sample log generator for Kibana demos
+2026-03-27 20:36:35.640  INFO [service=log-sample-generator,traceId=fdbc1ce4df2e42f8bc7cf94b826891bf,spanId=e870dbc159c94a8f] [main] com.example.logsample.LogSampleGeneratorApplication - Received request for order ORD-1001
+2026-03-27 20:36:35.647  INFO [service=log-sample-generator,traceId=fdbc1ce4df2e42f8bc7cf94b826891bf,spanId=e870dbc159c94a8f] [main] com.example.logsample.LogSampleGeneratorApplication - Loading order ORD-1001 at 2026-03-27T20:36:35.641503Z
+2026-03-27 20:36:35.648  INFO [service=log-sample-generator,traceId=fdbc1ce4df2e42f8bc7cf94b826891bf,spanId=e870dbc159c94a8f] [main] com.example.logsample.LogSampleGeneratorApplication - Successfully processed order ORD-1001
+2026-03-27 20:36:36.017  INFO [service=log-sample-generator,traceId=b9636b1876434fe88dab04e1f19bf277,spanId=31ade2e0f0d347bf] [main] com.example.logsample.LogSampleGeneratorApplication - Received request for order ORD-1002
+2026-03-27 20:36:36.018  INFO [service=log-sample-generator,traceId=b9636b1876434fe88dab04e1f19bf277,spanId=31ade2e0f0d347bf] [main] com.example.logsample.LogSampleGeneratorApplication - Loading order ORD-1002 at 2026-03-27T20:36:36.018007Z
+2026-03-27 20:36:36.018  INFO [service=log-sample-generator,traceId=b9636b1876434fe88dab04e1f19bf277,spanId=31ade2e0f0d347bf] [main] com.example.logsample.LogSampleGeneratorApplication - Successfully processed order ORD-1002
+2026-03-27 20:36:36.380  INFO [service=log-sample-generator,traceId=2d61250d7de747738c3bc201177761cd,spanId=610a7fdb7e164343] [main] com.example.logsample.LogSampleGeneratorApplication - Received request for order ORD-1003
+2026-03-27 20:36:36.381  INFO [service=log-sample-generator,traceId=2d61250d7de747738c3bc201177761cd,spanId=610a7fdb7e164343] [main] com.example.logsample.LogSampleGeneratorApplication - Loading order ORD-1003 at 2026-03-27T20:36:36.381656Z
+2026-03-27 20:36:36.382  INFO [service=log-sample-generator,traceId=2d61250d7de747738c3bc201177761cd,spanId=610a7fdb7e164343] [main] com.example.logsample.LogSampleGeneratorApplication - Successfully processed order ORD-1003
+2026-03-27 20:36:36.724  INFO [service=log-sample-generator,traceId=-,spanId=-] [main] com.example.logsample.LogSampleGeneratorApplication - Finished generating sample logs in ./log-samples/app.log
