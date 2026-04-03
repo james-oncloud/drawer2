@@ -16,6 +16,39 @@
 
 \*Total IPv4 addresses in the CIDR math sense; **usable for EC2 ENIs** in a subnet is lower because AWS reserves addresses (see below).
 
+## Working out the number of addresses (IPv4)
+
+An IPv4 address is **32 bits**. The prefix **`/n`** fixes the first **`n`** bits for the **network**; the remaining bits identify **hosts** inside that block.
+
+**Step 1 — Count host bits**
+
+`host bits = 32 − n`
+
+**Step 2 — Count IP addresses in the block**
+
+Each host bit can be 0 or 1, so the number of distinct addresses is **`2` raised to the power of the host bits**:
+
+`addresses in block = 2^(32 − n)`
+
+(You may see the same thing written as **2^host bits**.)
+
+**Worked examples**
+
+| Prefix | Host bits `(32 − n)` | Calculation | Addresses in block |
+|--------|----------------------|-------------|-------------------|
+| `/32` | 0 | 2^0 | 1 |
+| `/28` | 4 | 2^4 | 16 |
+| `/24` | 8 | 2^8 | 256 |
+| `/20` | 12 | 2^12 | 4,096 |
+| `/16` | 16 | 2^16 | 65,536 |
+
+Sanity check: **`/24`** leaves **8** host bits (one full octet varies), so **2^8 = 256**—in **`10.0.0.0/24`**, the last octet runs **0–255**.
+
+**“Usable hosts” vs total**
+
+- In **classic IPv4** teaching, some subtract **2** from the block size (**network** and **broadcast** addresses). That matches old LAN rules; it is **not** the whole story on AWS.
+- In **AWS subnets**, start from **`2^(32 − n)`** for the subnet’s **total** addresses, then account for **[reserved addresses](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-cidr-reservation.html)** (see below). For a typical IPv4 subnet, AWS reserves **five** addresses in that range, so a rough capacity estimate is **`2^(32 − n) − 5` assignable private IPs**—check the official table for your case (including small subnets and special prefixes).
+
 ## Quick intuition
 
 - **`10.0.0.0/24`** is all addresses from **`10.0.0.0`** through **`10.0.0.255`** (256 addresses).
@@ -45,7 +78,7 @@ Every resource with a private IP (e.g. an ENI) gets an address from **some subne
 
 ## AWS reservations in a subnet
 
-In each **subnet**, AWS reserves some IPs; **do not** assign these to your own static use. The exact rules are documented in [Subnet CIDR reservations](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-cidr-reservation.html); in practice:
+In each **subnet**, AWS reserves some IPs; **do not** assign these to your own static use. After you compute **`2^(32 − n)`** (see above), subtract what AWS holds back. The exact rules are documented in [Subnet CIDR reservations](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-cidr-reservation.html); in practice:
 
 - The **network** address, **VPC router**, **DNS**, **future use**, and **broadcast** (for IPv4) concepts mean a **`/24` does not give you 256 assignable endpoints**—plan capacity with margin, especially on small prefix sizes like `/28` or `/27`.
 

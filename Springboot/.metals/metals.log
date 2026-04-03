@@ -37,3 +37,5 @@ WARNING: Unmatched cancel notification for request id 75
 2026.03.27 20:37:23 INFO  no build target found for /Users/jamesking/work/drawer2/Springboot/kibana/projects/log-sample-generator-app/src/main/java/com/example/logsample/LogSampleGeneratorApplication.java. Using fallback presentation compiler.
 Mar 27, 2026 8:59:56 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Apr 03, 2026 11:14:18 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
