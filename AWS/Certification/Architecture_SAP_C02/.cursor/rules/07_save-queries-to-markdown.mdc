@@ -1,0 +1,23 @@
+---
+description: Save each user query/answer to a new indexed markdown file in this project
+alwaysApply: true
+---
+
+# Persist user queries as markdown
+
+When the **user** asks a question or requests documentation, explanations, guides, or other substantive output:
+
+1. **Create a new `.md` file** for that request. Do not merge it into unrelated existing notes unless the user explicitly asks to update a specific file.
+2. **Location**: this project folder (`Architecture_SAP_C02/`), alongside other study and query `.md` files (not a separate `notes/user-queries/` tree unless the user restores that layout).
+3. **Filename**: **`NN_`** + `kebab-case-topic.md` (no date in the name), where **`NN`** is the next two-digit index (`00`, `01`, …): take the **highest** `NN` used on any **`NN_*` file** under `Architecture_SAP_C02/` (including `.cursor/rules/*.mdc`) and add **1**. Example: if the highest is `07_*`, the next note is `08_example-topic.md`.
+4. **Contents**:
+   - A clear **title** (heading) reflecting the topic.
+   - A **“User query”** subsection with the user’s message (verbatim or lightly cleaned).
+   - A **“Notes / answer”** subsection with the response, synthesized guidance, or pointer to files changed elsewhere.
+
+**Exceptions**
+
+- **Trivial confirmations** only (`ok`, `thanks`, `yes`) with no follow-up work — no new file.
+- **Explicit path given** — If the user names an existing file to update, perform that edit; you may still add a short companion indexed note only if useful for traceability.
+
+Keep each file focused on **one** user turn’s topic so notes stay easy to find and review.
