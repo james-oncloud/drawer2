@@ -91,3 +91,4 @@ Source file in this folder: `04_vpc-core-concepts-story-diagram.png` (AI-generat
 - Factual checklist and definitions: `03_aws-vpc-core-concepts.md`
 - CIDR math and sizing: `02_cidr-blocks-aws.md`
 - Peering procedure: `01_vpc-peering-setup.md`
+- Study question bank (full coverage of this story): `06_vpc-story-study-questions.md`
