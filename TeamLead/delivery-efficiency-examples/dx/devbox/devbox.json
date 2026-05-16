@@ -1,0 +1,28 @@
+{
+  "packages": [
+    "nodejs@20",
+    "openjdk@21",
+    "docker@latest",
+    "kubectl@latest",
+    "terraform@1.7",
+    "gh@latest"
+  ],
+  "env": {
+    "JAVA_HOME": "$devbox/java",
+    "SPRING_PROFILES_ACTIVE": "local"
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Devbox ready — run: devbox run setup'"
+    ],
+    "scripts": {
+      "setup": [
+        "cp .env.example .env",
+        "docker compose -f ../docker-compose.local.yml up -d",
+        "./gradlew build -x test"
+      ],
+      "test": "./gradlew test integrationTest",
+      "tilt": "tilt up"
+    }
+  }
+}

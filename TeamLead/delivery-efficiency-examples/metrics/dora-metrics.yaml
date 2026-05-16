@@ -1,0 +1,46 @@
+# DORA-style engineering metrics — definitions for dashboards
+# Avoid vanity metrics (LOC, commit count). Focus on flow and stability.
+
+metrics:
+  lead_time_for_changes:
+    description: Time from commit merged to running in production
+    source: github + deploy_webhook
+    unit: hours
+    target_p50: 24
+    target_p90: 72
+
+  deployment_frequency:
+    description: Deploys to production per week per service
+    source: argocd_sync_events
+    unit: count/week
+    target: ">= 1 per service for active teams"
+
+  change_failure_rate:
+    description: "% of deploys causing incident or rollback"
+    source: incidents tagged deploy-correlation
+    unit: percent
+    target: "< 15%"
+
+  mttr:
+    description: Mean time to restore service after incident
+    source: pagerduty + incident_tool
+    unit: minutes
+    target_p50: 60
+
+  pr_cycle_time:
+    description: PR opened → merged
+    source: github_pull_requests
+    unit: hours
+    target_p50: 8
+
+  test_flakiness:
+    description: "% of CI runs with retry-passed tests"
+    source: ci_test_reports
+    unit: percent
+    target: "< 2%"
+
+  build_duration:
+    description: CI pipeline wall clock
+    source: github_actions
+    unit: minutes
+    target_p90: 15

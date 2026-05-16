@@ -1,0 +1,58 @@
+# Example CI pipeline — trunk-based, small PRs, mandatory tests
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: gradle
+
+      - name: PR size check
+        if: github.event_name == 'pull_request'
+        run: |
+          LINES=$(git diff --numstat origin/main... | awk '{add+=$1; del+=$2} END {print add+del}')
+          echo "Diff lines: $LINES"
+          if [ "$LINES" -gt 400 ]; then
+            echo "::warning::PR exceeds 400 lines — consider splitting"
+          fi
+
+      - name: Unit tests
+        run: ./gradlew test
+
+      - name: Integration tests (Testcontainers)
+        run: ./gradlew integrationTest
+
+      - name: SonarQube scan
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: ./gradlew sonar
+
+      - name: Snyk dependency scan
+        uses: snyk/actions/gradle@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+  preview-environment:
+    if: github.event_name == 'pull_request'
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy PR preview
+        run: echo "Deploy to ephemeral env pr-${{ github.event.pull_request.number }}"

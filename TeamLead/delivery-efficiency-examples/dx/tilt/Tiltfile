@@ -1,0 +1,19 @@
+# Faster local Kubernetes development — example Tiltfile
+allow_k8s_contexts('docker-desktop')
+
+docker_build('payment-service', '../architecture/platform/service-template',
+             dockerfile='Dockerfile',
+             live_update=[
+               sync('../architecture/platform/service-template/src', '/app/src'),
+               run('cd /app && ./gradlew classes', trigger=['src']),
+             ])
+
+k8s_yaml('k8s/deployment.yaml')
+k8s_resource('payment-service', port_forwards=8080)
+
+local_resource(
+  'integration-tests',
+  cmd='cd ../testcontainers && ./run-integration-tests.sh',
+  deps=['../architecture/platform/service-template/src'],
+  resource_deps=['payment-service'],
+)

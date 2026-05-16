@@ -1,0 +1,36 @@
+{
+  "incident_id": "INC-2025-0412",
+  "alert": "HighErrorRate on payment-service",
+  "window_utc": { "start": "2025-04-12T14:02:00Z", "end": "2025-04-12T14:35:00Z" },
+  "correlations": [
+    {
+      "type": "deploy",
+      "service": "payment-service",
+      "version": "sha-7f3a2b1",
+      "deployed_at": "2025-04-12T14:00:12Z",
+      "correlation_score": 0.92
+    },
+    {
+      "type": "log_pattern",
+      "message": "RedisConnectionException: Unable to connect",
+      "count": 1842,
+      "first_seen": "2025-04-12T14:01:58Z",
+      "correlation_score": 0.88
+    },
+    {
+      "type": "trace",
+      "operation": "RefundService.process",
+      "error_rate_delta": "+12%",
+      "correlation_score": 0.75
+    }
+  ],
+  "ai_suggested_causes": [
+    {
+      "cause": "New deploy cannot reach Redis after security group change",
+      "confidence": 0.85,
+      "runbook": "knowledge-sharing/runbooks/deploy-services.md#common-issues"
+    }
+  ],
+  "suggested_rollback": "argocd app rollback payment-service 4821",
+  "human_actions_taken": ["Rolled back at 14:22 UTC", "MTTR 20 minutes"]
+}

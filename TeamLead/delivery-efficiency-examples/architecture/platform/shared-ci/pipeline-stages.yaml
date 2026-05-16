@@ -1,0 +1,24 @@
+# Shared CI/CD stages — included by all platform services
+stages:
+  - lint
+  - unit-test
+  - integration-test
+  - security-scan
+  - build-image
+  - deploy-staging
+  - smoke-test
+  - deploy-production
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+  SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+
+include:
+  - local: /cicd/github-actions/ci.yml
+  - template: Security/SAST.gitlab-ci.yml
+
+rules:
+  - if: $CI_COMMIT_BRANCH == "main"
+    when: on_success
+  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    when: on_success

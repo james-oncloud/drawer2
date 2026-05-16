@@ -1,0 +1,31 @@
+{
+  "title": "Engineering Delivery Metrics",
+  "uid": "eng-delivery",
+  "panels": [
+    {
+      "title": "Deployment Frequency (7d)",
+      "type": "stat",
+      "targets": [{ "expr": "sum(increase(argocd_app_sync_total{phase=\"Succeeded\"}[7d]))" }]
+    },
+    {
+      "title": "Lead Time for Changes (p50)",
+      "type": "timeseries",
+      "targets": [{ "expr": "histogram_quantile(0.5, sum(rate(deploy_lead_time_seconds_bucket[7d])) by (le))" }]
+    },
+    {
+      "title": "Change Failure Rate",
+      "type": "gauge",
+      "targets": [{ "expr": "sum(incidents_deploy_related) / sum(deployments_total)" }]
+    },
+    {
+      "title": "PR Cycle Time",
+      "type": "histogram",
+      "targets": [{ "expr": "github_pr_cycle_time_hours" }]
+    },
+    {
+      "title": "CI Build Duration p90",
+      "type": "timeseries",
+      "targets": [{ "expr": "histogram_quantile(0.9, sum(rate(ci_pipeline_duration_seconds_bucket[1d])) by (le))" }]
+    }
+  ]
+}

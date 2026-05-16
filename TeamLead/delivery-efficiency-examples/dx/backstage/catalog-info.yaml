@@ -1,0 +1,43 @@
+# Backstage service catalog — example Component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payment-service
+  description: Processes payments and refunds
+  tags:
+    - java
+    - spring-boot
+    - kafka
+  links:
+    - url: https://github.com/org/payment-service
+      title: Repository
+    - url: https://grafana.example.com/d/payment-service
+      title: Dashboard
+    - url: https://runbooks.example.com/payment-service
+      title: Runbooks
+  annotations:
+    github.com/project-slug: org/payment-service
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: group:payments-team
+  system: payments
+  providesApis:
+    - payment-api
+  dependsOn:
+    - resource:payments-db
+    - resource:kafka-cluster
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: payment-api
+  description: Payment REST API
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:payments-team
+  definition:
+    $text: ./openapi.yaml

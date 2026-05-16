@@ -1,0 +1,31 @@
+# Architecture reviewer — automated checks (LLM + static analysis)
+rules:
+  layering:
+    description: Domain must not depend on infrastructure adapters
+    pattern: "domain.* importing ..infra.."
+    severity: high
+
+  cyclic_dependencies:
+    description: No cycles between Gradle/Maven modules
+    tool: gradle-dependency-analyze
+    severity: critical
+
+  duplicated_logic:
+    description: Similar retry/DLQ code across consumers
+    min_duplication_lines: 30
+    severity: medium
+    suggestion: "Extract to platform-kafka-retry library"
+
+  direct_db_from_api:
+    description: Controllers should not use repositories directly
+    severity: medium
+
+  missing_observability:
+    description: New HTTP routes without metrics/tracing
+  required_annotations:
+    - "@Timed"
+    - "otel span on entry"
+
+llm_review:
+  prompt: "../../ai-practices/prompt-library/architecture-review.prompt.md"
+  trigger: pull_request_label architecture-review

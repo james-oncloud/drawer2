@@ -1,0 +1,40 @@
+# Internal RAG assistant — document ingestion config (example)
+sources:
+  - type: confluence
+    space_keys: [PLATFORM, PAYMENTS, RUNBOOKS]
+    refresh_cron: "0 2 * * *"
+
+  - type: github
+    org: org
+    repos:
+      - platform-deploy
+      - golden-paths
+    paths:
+      - "**/*.md"
+      - "**/catalog-info.yaml"
+
+  - type: notion
+    database_id: ${NOTION_ENGINEERING_DB}
+
+chunking:
+  strategy: semantic
+  max_tokens: 512
+  overlap: 64
+
+embedding:
+  model: text-embedding-3-large
+
+retrieval:
+  top_k: 8
+  rerank: true
+  filter_by_team: optional  # from user SSO groups
+
+allowed_questions_examples:
+  - "How do we deploy services?"
+  - "How do Kafka retries work here?"
+  - "Which service owns payments?"
+
+guardrails:
+  - no_pii_in_logs
+  - cite_sources_required: true
+  - escalate_to_human_if_confidence_below: 0.7
