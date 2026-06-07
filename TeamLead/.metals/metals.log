@@ -7,3 +7,7 @@
 2026.05.16 20:18:00 WARN  no build target for: /Users/jamesking/work/drawer2/TeamLead/delivery-efficiency-examples/dx/testcontainers/PaymentRepositoryIT.java
 2026.05.16 20:18:00 INFO  no build target found for /Users/jamesking/work/drawer2/TeamLead/delivery-efficiency-examples/dx/testcontainers/PaymentRepositoryIT.java. Using fallback presentation compiler.
 2026.05.16 20:18:01 INFO  no build target found for /Users/jamesking/work/drawer2/TeamLead/delivery-efficiency-examples/dx/testcontainers/PaymentRepositoryIT.java. Using fallback presentation compiler.
+2026.05.16 20:30:02 INFO  Shutting down server
+2026.05.16 20:30:02 INFO  Memory monitor stopped
+2026.05.16 20:30:02 INFO  shutting down Metals
+2026.05.16 20:30:02 INFO  Exiting server

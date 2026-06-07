@@ -1,0 +1,1152 @@
+2026.06.06 11:20:14 INFO  Started: Metals version 1.6.7 in folders '/Users/jamesking/work/drawer2/Monitoring' for client Cursor 1.105.1.
+2026.06.06 11:20:14 INFO  Memory monitor started
+2026.06.06 11:20:14 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.06.06 11:20:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:27:20 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:27:20 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:27:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:27:57 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:27:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:23 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:28:59 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+Jun 06, 2026 11:29:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 74
+2026.06.06 11:29:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:43 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:29:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:48 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:29:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:55 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:29:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:58 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:29:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:29:58 INFO  empty definition using pc, found symbol in pc: _empty_/Counter# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_11-29-58-797.md")
+2026.06.06 11:29:58 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 11:29:58 INFO  empty definition using pc, found symbol in pc: _empty_/Counter# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_11-29-58-797.md")
+2026.06.06 11:30:00 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 11:30:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:30:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 11:30:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:01:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:27 INFO  empty definition using pc, found symbol in pc: _empty_/Counter# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_11-29-58-797.md")
+2026.06.06 17:03:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:31 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:03:31 INFO  empty definition using pc, found symbol in pc: java/util/Random# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-03-31-555.md")
+2026.06.06 17:03:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:03:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:05:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:05:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:05:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:05:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:06:36 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:06:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:06:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:06:49 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:06:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:06:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:28 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+Jun 06, 2026 5:09:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 236
+2026.06.06 17:09:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:46 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:09:46 INFO  empty definition using pc, found symbol in pc:  (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-09-46-681.md")
+Jun 06, 2026 5:09:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 250
+2026.06.06 17:09:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:46 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:09:46 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpServer#createContext(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-09-46-715.md")
+2026.06.06 17:09:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:46 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpServer#createContext(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-09-46-715.md")
+Jun 06, 2026 5:09:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/jdk.httpserver/com.sun.net.httpserver/HttpServer.java?%3Dmonitoring-demo%2F%5C%2FUsers%5C%2Fjamesking%5C%2F.sdkman%5C%2Fcandidates%5C%2Fjava%5C%2F21.0.9-amzn%5C%2Flib%5C%2Fjrt-fs.jar%60jdk.httpserver%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F21%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Ccom.sun.net.httpserver%28HttpServer.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.06.06 17:09:50 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:09:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:09:59 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:10:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:11:12 INFO  empty definition using pc, found symbol in pc:  (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-11-12-651.md")
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:13 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpServer#createContext(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-09-46-715.md")
+2026.06.06 17:11:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:13 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpServer#createContext(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-09-46-715.md")
+Jun 06, 2026 5:11:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/jdk.httpserver/com.sun.net.httpserver/HttpServer.java?%3Dmonitoring-demo%2F%5C%2FUsers%5C%2Fjamesking%5C%2F.sdkman%5C%2Fcandidates%5C%2Fjava%5C%2F21.0.9-amzn%5C%2Flib%5C%2Fjrt-fs.jar%60jdk.httpserver%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F21%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Ccom.sun.net.httpserver%28HttpServer.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jun 06, 2026 5:11:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/jdk.httpserver/com.sun.net.httpserver/HttpHandler.java?%3Dmonitoring-demo%2F%5C%2FUsers%5C%2Fjamesking%5C%2F.sdkman%5C%2Fcandidates%5C%2Fjava%5C%2F21.0.9-amzn%5C%2Flib%5C%2Fjrt-fs.jar%60jdk.httpserver%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F21%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Ccom.sun.net.httpserver%28HttpHandler.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.06.06 17:11:28 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:11:28 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:11:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:01 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:12:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:12:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:15 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:24 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:13:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:14:15 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:15:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:17:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:18:59 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:19:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:19:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:19:23 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:19:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:19:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:19:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:31 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:27:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:27:59 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:30 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:28:30 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpExchange#getResponseBody(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-28-30-405.md")
+2026.06.06 17:28:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:28:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:29:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+Jun 06, 2026 5:30:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 788
+2026.06.06 17:30:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:30:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:31:46 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:31:46 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:31:46 INFO  empty definition using pc, found symbol in pc: _empty_/Gauge#builder#description# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-31-46-309.md")
+2026.06.06 17:31:46 INFO  empty definition using pc, found symbol in pc: _empty_/Gauge#builder# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-31-46-309.md")
+2026.06.06 17:32:20 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:32:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:32:22 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:32:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:32:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:34:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:35:47 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:35:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:35:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:35:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:35:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:08 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:36:08 INFO  empty definition using pc, found symbol in pc: java/nio/charset/StandardCharsets#UTF_8. (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-36-08-587.md")
+2026.06.06 17:36:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:25 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:36:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:20 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:20 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:24 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:24 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:25 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:25 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:27 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:37:27 INFO  empty definition using pc, found symbol in pc: _empty_/PrometheusMeterRegistry#scrape# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-37-27-534.md")
+2026.06.06 17:37:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:27 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:37:27 INFO  empty definition using pc, found symbol in pc: _empty_/PrometheusMeterRegistry#scrape#getBytes# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-37-27-577.md")
+2026.06.06 17:37:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:28 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:33 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:37:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:37:52 INFO  empty definition using pc, found symbol in pc: java/nio/charset/StandardCharsets#UTF_8. (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-36-08-587.md")
+2026.06.06 17:37:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:38:53 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:38:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:38:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:12 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:39:12 INFO  empty definition using pc, found symbol in pc: _empty_/PrometheusMeterRegistry# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-39-12-975.md")
+2026.06.06 17:39:12 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:39:12 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:12 INFO  empty definition using pc, found symbol in pc: _empty_/PrometheusMeterRegistry# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-39-12-975.md")
+2026.06.06 17:39:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:23 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:39:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:05 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:15 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:24 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:24 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:27 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:40:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:55 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:40:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:55 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:40:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:40:59 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:40:59 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:00 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:41:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:01 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:41:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:02 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:41:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:02 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:41:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:06 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:41:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:06 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:41:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:41:06 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:41:06 INFO  empty definition using pc, found symbol in pc: java/lang/InterruptedException# (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-41-07-830.md")
+2026.06.06 17:41:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:05 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:20 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:20 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:20 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 17:42:20 INFO  empty definition using pc, found symbol in pc: java/io/PrintStream#printf(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-42-20-857.md")
+2026.06.06 17:42:20 INFO  empty definition using pc, found symbol in pc: java/io/PrintStream#printf(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-42-20-857.md")
+2026.06.06 17:42:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:23 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:38 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:44 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:45 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:45 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:45 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:46 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:46 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:47 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:42:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:42:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:45:19 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:45:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:39 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:46:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:41 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:46:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:41 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:46:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:42 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:46:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:43 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:46:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:45 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:46:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:46:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:49:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:49:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:49:58 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:49:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:49:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:50:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:50:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:50:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:50:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:50:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:50:53 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:50:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:53:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:53:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:53:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:53:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:53:55 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:53:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:55:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:56:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:58:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:58:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:58:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:46 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:59:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:49 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:59:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:50 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:59:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:51 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 17:59:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 17:59:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:40 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:00:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:45 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:00:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:45 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:00:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:00:46 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:00:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:07 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:03:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:08 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:11 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:03:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:11 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:03:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:11 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:03:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:03:31 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:07:26 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:07:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:07:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:07:28 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:08:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:49 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:15:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:51 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:15:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:15:51 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:15:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:18 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:25:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:17 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:25:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:19 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:25:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:19 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:25:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:26 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:42 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:44 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:46 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:25:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:46 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 18:25:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:47 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:25:59 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 18:28:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:07:09 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+Jun 06, 2026 8:07:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/jdk.httpserver/com.sun.net.httpserver/HttpHandler.java?%3Dmonitoring-demo%2F%5C%2FUsers%5C%2Fjamesking%5C%2F.sdkman%5C%2Fcandidates%5C%2Fjava%5C%2F21.0.9-amzn%5C%2Flib%5C%2Fjrt-fs.jar%60jdk.httpserver%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F21%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Ccom.sun.net.httpserver%28HttpHandler.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.06.06 20:07:24 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:14 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:15 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:21 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:22 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:25 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:25 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:27 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:28 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:31 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:33 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:12:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 20:12:36 INFO  empty definition using pc, found symbol in pc: java/lang/String#getBytes(+2). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_20-12-36-545.md")
+2026.06.06 20:12:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 20:12:36 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpExchange#sendResponseHeaders(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_20-12-36-587.md")
+2026.06.06 20:12:36 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:12:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:36 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpExchange#getResponseBody(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_17-28-30-405.md")
+2026.06.06 20:12:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:39 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:45 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:48 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:49 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:51 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:51 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpExchange#sendResponseHeaders(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_20-12-36-587.md")
+2026.06.06 20:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:51 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:51 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpExchange#sendResponseHeaders(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_20-12-36-587.md")
+2026.06.06 20:12:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:56 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:12:56 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:57 INFO  empty definition using pc, found symbol in pc: com/sun/net/httpserver/HttpExchange#sendResponseHeaders(). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_20-12-36-587.md")
+2026.06.06 20:12:57 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:12:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:12:58 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:13:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:13:00 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:13:00 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java]
+2026.06.06 20:13:00 INFO  empty definition using pc, found symbol in pc: java/io/OutputStream#write(+1). (full report at: "/Users/jamesking/work/drawer2/Monitoring/.metals/.reports/metals-full/2026-06-06/r_empty-definition_20-13-00-207.md")
+2026.06.06 20:13:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:13:02 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:13:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:15:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:17:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:21:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:21:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:29 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:24:29 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:32 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:34 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:24:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:24:35 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:24:34 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:15 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:29:15 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:16 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:17 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:29:17 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:17 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:29:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:29:18 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:29:18 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:34:46 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:50 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:41:50 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:53 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:41:53 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:52 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:41:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:41:55 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:43:11 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:43:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:52:35 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:52:35 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:52:43 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:01 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:03 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:53:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:03 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:05 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:04 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:53:04 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:05 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:53:05 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:05 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:53:05 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:06 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:53:06 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:19 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:53:30 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:55:07 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:55:13 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:51 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:58:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:51 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:52 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 20:58:52 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 20:58:54 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:01:40 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 21:01:40 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:01:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:01:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:01:41 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:01:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:01:57 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:02:10 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:03:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:03:36 WARN  no build target for: /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java
+2026.06.06 21:03:36 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.06 21:03:37 INFO  no build target found for /Users/jamesking/work/drawer2/Monitoring/app/src/main/java/com/example/monitoring/App.java. Using fallback presentation compiler.
+2026.06.07 10:03:56 INFO  Shutting down server
+2026.06.07 10:03:56 INFO  Memory monitor stopped
+2026.06.07 10:03:56 INFO  shutting down Metals
+2026.06.07 10:03:56 INFO  Exiting server

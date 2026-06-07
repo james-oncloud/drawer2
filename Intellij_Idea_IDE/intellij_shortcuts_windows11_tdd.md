@@ -35,8 +35,8 @@ Ctrl+B            → jump to declaration / definition
 Ctrl+Alt+B        → go to implementation
 Ctrl+E            → recent files
 Ctrl+Shift+E      → recently edited files
-Ctrl+Alt+Left     → navigate back
-Ctrl+Alt+Right    → navigate forward
+Shift+Alt+Left    → navigate back
+Shift+Alt+Right   → navigate forward
 Ctrl+F12          → file structure (methods / fields)
 ```
 

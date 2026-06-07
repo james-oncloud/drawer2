@@ -1,0 +1,18 @@
+# Jenkins LTS with persistent home directory.
+# Run: ./shell/start-jenkins.sh
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    restart: unless-stopped
+    ports:
+      - "8081:8080"   # Jenkins UI
+      - "50000:50000" # inbound agents
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      # Mount Docker socket if pipelines need to run docker commands on the host.
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  jenkins_home:
