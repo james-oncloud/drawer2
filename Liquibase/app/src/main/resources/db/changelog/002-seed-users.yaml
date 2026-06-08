@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: seed-users
+      author: demo
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: email
+                  value: alice@example.com
+              - column:
+                  name: name
+                  value: Alice
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: email
+                  value: bob@example.com
+              - column:
+                  name: name
+                  value: Bob
