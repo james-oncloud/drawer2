@@ -143,3 +143,12 @@ git push --force-with-lease origin feature
 ```
 
 If you want, I can also outline the **interactive rebase** flow (`git rebase -i`) for squashing commits before a PR.
+
+```
+git checkout feature
+git rebase main
+- seek common point between feature and main
+- pick all main commits (from common point) not in feature and add to feature
+- then add all feature commits not in main
+- main did not change only feature did
+```
