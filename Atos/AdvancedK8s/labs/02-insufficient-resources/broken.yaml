@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resource-lab
+  namespace: k8s-lab
+  labels:
+    app: resource-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: resource-lab
+  template:
+    metadata:
+      labels:
+        app: resource-lab
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.27-alpine
+          resources:
+            requests:
+              memory: 16Gi
+              cpu: "8"
+            limits:
+              memory: 16Gi
+              cpu: "8"

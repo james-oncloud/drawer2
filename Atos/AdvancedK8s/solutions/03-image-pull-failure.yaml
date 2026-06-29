@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-pull-lab
+  namespace: k8s-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: image-pull-lab
+  template:
+    metadata:
+      labels:
+        app: image-pull-lab
+    spec:
+      containers:
+        - name: app
+          image: nginx:1.27-alpine

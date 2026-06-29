@@ -1,0 +1,298 @@
+2026.06.22 23:30:08 INFO  Started: Metals version 1.6.7 in folders '/Users/jamesking/work/drawer2/Atos/K8s' for client Cursor 1.105.1.
+2026.06.22 23:30:08 INFO  Memory monitor started
+2026.06.22 23:30:08 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.06.22 23:30:24 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.22 23:30:24 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.22 23:30:39 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.22 23:30:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.22 23:31:01 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.22 23:31:36 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.22 23:34:26 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.22 23:35:11 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+Jun 22, 2026 11:35:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+2026.06.22 23:35:15 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.22 23:35:45 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.22 23:35:49 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:22:57 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 16:22:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:22:58 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:23:00 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 16:23:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:23:01 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:23:01 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:23:04 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:25:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:45:48 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.27 16:45:48 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 16:45:52 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 16:45:52 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:45:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:46:06 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:46:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:46:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:46:08 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:46:24 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:32 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:32 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:33 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:34 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:35 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:38 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 16:47:38 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:47:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:20 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:37 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:37 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:37 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:39 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 16:48:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:53 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 16:48:53 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:08:29 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 17:08:29 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:08:34 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:08:41 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:08:42 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:08:44 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:08:52 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:13 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 17:09:13 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:43 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:44 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:43 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:45 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:46 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 17:09:46 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 17:09:58 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:19:23 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.27 19:19:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 19:19:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 19:19:27 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 19:19:27 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:19:28 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.27 19:19:28 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 19:19:29 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 19:19:29 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:19:33 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:21:31 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:21:32 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:21:36 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:21:46 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:22:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:22:13 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 19:22:13 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:22:28 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:22:28 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:22:28 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java]
+2026.06.27 19:22:28 INFO  empty definition using pc, found symbol in pc: _empty_/RequestParam# (full report at: "/Users/jamesking/work/drawer2/Atos/K8s/.metals/.reports/metals-full/2026-06-27/r_empty-definition_19-22-28-884.md")
+2026.06.27 19:23:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:23:16 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:36:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 19:36:01 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 19:36:01 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 19:36:02 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 20:58:27 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:01:35 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:01:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:08 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:04:08 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:16 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:16 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:17 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:27 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:30 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:31 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:31 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:31 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:31 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:33 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:35 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:59 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:04:59 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:06:38 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:06:38 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:06:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:06:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:06:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:06:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:06:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:08:21 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.27 21:08:21 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:08:22 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:08:22 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:08:22 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:08:22 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:08:22 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:08:48 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:07 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:10 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:09:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:03 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:06 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:10 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:13 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:17 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:19 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:19 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:19 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:12:19 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:20 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:20 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java]
+2026.06.27 21:12:20 INFO  empty definition using pc, found symbol in pc: java/util/UUID#randomUUID(). (full report at: "/Users/jamesking/work/drawer2/Atos/K8s/.metals/.reports/metals-full/2026-06-27/r_empty-definition_21-12-20-100.md")
+2026.06.27 21:12:19 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:19 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:12:20 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:20 INFO  empty definition using pc, found symbol in pc: java/util/UUID#randomUUID(). (full report at: "/Users/jamesking/work/drawer2/Atos/K8s/.metals/.reports/metals-full/2026-06-27/r_empty-definition_21-12-20-100.md")
+2026.06.27 21:12:20 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:20 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:21 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:21 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:24 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:23 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:24 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:24 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:12:24 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:24 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:12:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:24 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:12:24 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:12:25 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:12:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:16:18 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:16:27 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:18:34 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:18:35 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:18:35 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:18:48 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:18:48 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:18:49 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:18:49 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:27:43 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java
+2026.06.27 21:27:47 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:27:48 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:27:48 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:28:02 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:28:03 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java
+2026.06.27 21:28:03 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:18 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:19 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:28:19 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:28:21 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:28:22 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java
+2026.06.27 21:28:22 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:28 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:28:28 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:28:28 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java
+2026.06.27 21:28:28 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:40 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.27 21:28:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:28:41 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:28:42 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:28:43 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java
+2026.06.27 21:28:43 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:56 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:56 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:57 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java]
+2026.06.27 21:28:57 INFO  empty definition using pc, found symbol in pc: _empty_/ApplicationRunner# (full report at: "/Users/jamesking/work/drawer2/Atos/K8s/.metals/.reports/metals-full/2026-06-27/r_empty-definition_21-28-57-638.md")
+2026.06.27 21:28:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:28:57 INFO  empty definition using pc, found symbol in pc: _empty_/ApplicationRunner# (full report at: "/Users/jamesking/work/drawer2/Atos/K8s/.metals/.reports/metals-full/2026-06-27/r_empty-definition_21-28-57-638.md")
+Jun 27, 2026 9:28:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/spring-boot-3.4.5.jar/org.springframework.boot/ApplicationRunner.java?%3Dhello-app%2F%5C%2FUsers%5C%2Fjamesking%5C%2F.m2%5C%2Frepository%5C%2Forg%5C%2Fspringframework%5C%2Fboot%5C%2Fspring-boot%5C%2F3.4.5%5C%2Fspring-boot-3.4.5.jar%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3D%2Fjavadoc_location%3D%2Fjar%3Afile%3A%5C%2FUsers%5C%2Fjamesking%5C%2F.m2%5C%2Frepository%5C%2Forg%5C%2Fspringframework%5C%2Fboot%5C%2Fspring-boot%5C%2F3.4.5%5C%2Fspring-boot-3.4.5-javadoc.jar%5C%21%5C%2F%3D%2F%3D%2Fmaven.groupId%3D%2Forg.springframework.boot%3D%2F%3D%2Fmaven.artifactId%3D%2Fspring-boot%3D%2F%3D%2Fmaven.version%3D%2F3.4.5%3D%2F%3D%2Fmaven.scope%3D%2Fcompile%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Corg.springframework.boot%28ApplicationRunner.class"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:787)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:784)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:808)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:225)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:192)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.06.27 21:29:11 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java
+2026.06.27 21:29:11 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:29:11 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:29:45 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:29:48 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+Jun 27, 2026 9:29:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 473
+2026.06.27 21:29:49 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:30:08 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:30:20 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:30:31 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:30:33 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:31:01 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:31:09 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:31:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:31:50 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:31:50 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:13 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:34 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:37 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:45 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:45 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:32:46 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:34:43 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:34:43 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:34:51 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/RandomKillRunner.java. Using fallback presentation compiler.
+2026.06.27 21:34:51 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java
+2026.06.27 21:34:51 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:34:52 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.27 21:34:53 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java
+2026.06.27 21:34:54 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:35:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:35:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:35:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:36:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:36:04 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:36:04 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 21:40:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloController.java. Using fallback presentation compiler.
+2026.06.27 23:01:35 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/K8s/app/src/main/java/com/example/hello/HelloApplication.java. Using fallback presentation compiler.
+2026.06.29 21:09:59 INFO  Shutting down server
+2026.06.29 21:09:59 INFO  Memory monitor stopped
+2026.06.29 21:09:59 INFO  shutting down Metals
+2026.06.29 21:09:59 INFO  Exiting server

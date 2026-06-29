@@ -1,0 +1,23 @@
+---
+# Source: hello/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello
+  labels:
+    helm.sh/chart: hello-0.1.0
+    app.kubernetes.io/name: hello
+    app.kubernetes.io/instance: hello
+    app.kubernetes.io/version: "1.0.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: hello
+    app.kubernetes.io/instance: hello
+

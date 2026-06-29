@@ -1,0 +1,23 @@
+---
+# Source: hello/templates/service-headless.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-headless
+  labels:
+    helm.sh/chart: hello-0.1.0
+    app.kubernetes.io/name: hello
+    app.kubernetes.io/instance: hello
+    app.kubernetes.io/version: "1.0.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  clusterIP: None
+  ports:
+    - port: 8080
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: hello
+    app.kubernetes.io/instance: hello
+

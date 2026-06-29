@@ -1,0 +1,12 @@
+Release "{{ .Release.Name }}" deployed.
+
+Replicas: {{ .Values.replicaCount }} (each pod gets a unique GUID appId)
+Image:    {{ .Values.image.repository }}:{{ .Values.image.tag }}
+
+Service type: {{ .Values.service.type }}
+
+Open in browser or curl (Docker Desktop maps LoadBalancer to localhost):
+
+  http://localhost:{{ .Values.service.port }}/hello
+
+Traffic is load-balanced across pods. When a pod restarts, other instances keep serving.

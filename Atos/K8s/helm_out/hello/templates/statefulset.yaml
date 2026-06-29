@@ -1,0 +1,35 @@
+---
+# Source: hello/templates/statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: hello
+  labels:
+    helm.sh/chart: hello-0.1.0
+    app.kubernetes.io/name: hello
+    app.kubernetes.io/instance: hello
+    app.kubernetes.io/version: "1.0.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  serviceName: hello-headless
+  replicas: 3
+  podManagementPolicy: Parallel
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: hello
+      app.kubernetes.io/instance: hello
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: hello
+        app.kubernetes.io/instance: hello
+    spec:
+      containers:
+        - name: hello
+          image: "hello-app:latest"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+

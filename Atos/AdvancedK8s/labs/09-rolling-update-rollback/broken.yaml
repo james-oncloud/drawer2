@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rollout-lab
+  namespace: k8s-lab
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rollout-lab
+  template:
+    metadata:
+      labels:
+        app: rollout-lab
+        version: v1
+    spec:
+      containers:
+        - name: web
+          image: nginx:1.27-alpine

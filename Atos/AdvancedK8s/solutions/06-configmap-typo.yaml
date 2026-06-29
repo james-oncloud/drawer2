@@ -1,0 +1,42 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: k8s-lab
+data:
+  DATABASE_URL: "postgres://db:5432/app"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: configmap-lab
+  namespace: k8s-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: configmap-lab
+  template:
+    metadata:
+      labels:
+        app: configmap-lab
+    spec:
+      containers:
+        - name: app
+          image: busybox:1.36
+          command:
+            - sh
+            - -c
+            - |
+              if [ -z "$DATABASE_URL" ]; then
+                echo "FATAL: DATABASE_URL not set"
+                exit 1
+              fi
+              echo "Connected: $DATABASE_URL"
+              sleep 3600
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: DATABASE_URL

@@ -1,0 +1,3 @@
+# Override file for demoing helm upgrade with different values.
+replicaCount: 2
+message: "Hello from Helm — upgraded release!"

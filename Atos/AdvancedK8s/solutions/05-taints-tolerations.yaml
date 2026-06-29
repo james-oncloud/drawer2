@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taint-lab
+  namespace: k8s-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: taint-lab
+  template:
+    metadata:
+      labels:
+        app: taint-lab
+    spec:
+      tolerations:
+        - key: dedicated
+          operator: Equal
+          value: gpu
+          effect: NoSchedule
+      containers:
+        - name: nginx
+          image: nginx:1.27-alpine

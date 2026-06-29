@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-pull-lab
+  namespace: k8s-lab
+  labels:
+    app: image-pull-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: image-pull-lab
+  template:
+    metadata:
+      labels:
+        app: image-pull-lab
+    spec:
+      containers:
+        - name: app
+          image: nginx:this-tag-does-not-exist-404
+          imagePullPolicy: Always
