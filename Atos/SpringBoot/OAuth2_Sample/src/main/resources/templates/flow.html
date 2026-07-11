@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>OAuth2 Flow · OAuth2 Sample</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<main class="container">
+  <header>
+    <p class="eyebrow">End-to-end flow</p>
+    <h1>Authorization Code Flow</h1>
+    <p class="lead">What happens when you click “Login with OAuth2” in this sample app.</p>
+  </header>
+
+  <section class="card">
+    <ol class="flow-steps">
+      <li>
+        <strong>Authorization request</strong>
+        <p>The client redirects the browser to <code>/oauth2/authorize</code> with <code>client_id</code>, <code>redirect_uri</code>, <code>response_type=code</code>, and <code>scope</code>.</p>
+      </li>
+      <li>
+        <strong>User authentication</strong>
+        <p>If not signed in, Spring Security shows the login page. Demo users authenticate with username/password.</p>
+      </li>
+      <li>
+        <strong>Consent</strong>
+        <p>The authorization server asks the user to approve the requested scopes for client <code>demo-client</code>.</p>
+      </li>
+      <li>
+        <strong>Authorization code</strong>
+        <p>The browser is redirected back to <code>/login/oauth2/code/demo-client?code=...</code> with a one-time authorization code.</p>
+      </li>
+      <li>
+        <strong>Token exchange</strong>
+        <p>The OAuth2 client exchanges the code at <code>/oauth2/token</code> using <code>client_id</code> and <code>client_secret</code>, receiving access and refresh tokens.</p>
+      </li>
+      <li>
+        <strong>Resource access</strong>
+        <p>The access token (JWT) is sent as <code>Authorization: Bearer ...</code> to protected endpoints such as <code>/api/user</code>.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Key endpoints</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Endpoint</th>
+        <th>Purpose</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><code>/.well-known/openid-configuration</code></td>
+        <td>OIDC discovery document</td>
+      </tr>
+      <tr>
+        <td><code>/oauth2/authorize</code></td>
+        <td>Start authorization code flow</td>
+      </tr>
+      <tr>
+        <td><code>/oauth2/token</code></td>
+        <td>Exchange code or refresh token for tokens</td>
+      </tr>
+      <tr>
+        <td><code>/oauth2/jwks</code></td>
+        <td>Public keys for JWT validation</td>
+      </tr>
+      <tr>
+        <td><code>/userinfo</code></td>
+        <td>OIDC user info (requires access token)</td>
+      </tr>
+      <tr>
+        <td><code>/api/public/health</code></td>
+        <td>Unprotected resource server endpoint</td>
+      </tr>
+      <tr>
+        <td><code>/api/user</code></td>
+        <td>Protected resource server endpoint</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <a th:href="@{/}">Back to home</a>
+  </footer>
+</main>
+</body>
+</html>

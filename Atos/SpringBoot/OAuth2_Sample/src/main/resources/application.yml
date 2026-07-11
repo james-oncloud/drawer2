@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: oauth2-sample
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      authorizationserver:
+        issuer: http://localhost:8080
+
+logging:
+  level:
+    org.springframework.security: INFO

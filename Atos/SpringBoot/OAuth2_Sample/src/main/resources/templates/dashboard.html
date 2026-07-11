@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Dashboard · OAuth2 Sample</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<main class="container">
+  <header>
+    <p class="eyebrow">OAuth2 Client Session</p>
+    <h1>Dashboard</h1>
+    <p class="lead">You completed the authorization code flow. Tokens and OIDC claims are shown below.</p>
+  </header>
+
+  <section class="card-grid">
+    <article class="card">
+      <h2>User profile</h2>
+      <dl>
+        <dt>Username</dt>
+        <dd th:text="${username}">alice</dd>
+        <dt>Email</dt>
+        <dd th:text="${email} ?: '—'">—</dd>
+        <dt>Subject</dt>
+        <dd><code th:text="${subject}">sub</code></dd>
+        <dt>Granted scopes</dt>
+        <dd th:text="${scopes}">SCOPE_read</dd>
+      </dl>
+    </article>
+
+    <article class="card">
+      <h2>Token details</h2>
+      <dl>
+        <dt>Token type</dt>
+        <dd th:text="${tokenType} ?: '—'">Bearer</dd>
+        <dt>Expires at</dt>
+        <dd th:text="${expiresAt} ?: '—'">—</dd>
+        <dt>Refresh token</dt>
+        <dd><code class="token" th:text="${refreshToken} ?: 'Not issued'">—</code></dd>
+      </dl>
+    </article>
+  </section>
+
+  <section class="card">
+    <h2>Access token</h2>
+    <pre class="token-block" th:text="${accessToken} ?: 'No access token available'">token</pre>
+    <p class="hint">Use this token to call protected APIs:</p>
+    <pre class="command">curl -H "Authorization: Bearer &lt;access_token&gt;" http://localhost:8080/api/user</pre>
+    <pre class="command">curl -H "Authorization: Bearer &lt;access_token&gt;" http://localhost:8080/api/hello</pre>
+  </section>
+
+  <footer class="actions">
+    <a class="button" th:href="@{/}">Home</a>
+    <form th:action="@{/logout}" method="post">
+      <button class="button danger" type="submit">Logout</button>
+    </form>
+  </footer>
+</main>
+</body>
+</html>

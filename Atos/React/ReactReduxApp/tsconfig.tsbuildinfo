@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/features/counter/counter.tsx","./src/features/counter/counteractions.ts","./src/features/counter/counterreducer.ts","./src/features/counter/countertypes.ts","./src/store/hooks.ts","./src/store/index.ts"],"version":"5.9.3"}

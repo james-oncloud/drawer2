@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #64748b;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 8%);
+}
+
+.card h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+}
+
+.hint {
+  margin: 0 0 1.25rem;
+  color: #64748b;
+  font-size: 0.9375rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter-value {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.counter-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.counter-actions button {
+  min-width: 3rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.counter-actions button:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.counter-actions button:disabled,
+.btn-fetch:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.counter-status {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9375rem;
+}
+
+.counter-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.9375rem;
+}
+
+.btn-fetch {
+  padding: 0.5rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #e0f2fe;
+  color: #0c4a6e;
+}
+
+.btn-fetch:hover:not(:disabled) {
+  background: #bae6fd;
+}

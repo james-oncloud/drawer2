@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Login · OAuth2 Sample</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<main class="container narrow">
+  <header>
+    <p class="eyebrow">Authorization Server</p>
+    <h1>Sign in</h1>
+    <p class="lead">Authenticate to approve an OAuth2 authorization request or continue to the client app.</p>
+  </header>
+
+  <section class="card">
+    <form th:action="@{/login}" method="post">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" autocomplete="username" required/>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required/>
+
+      <button class="button primary" type="submit">Sign in</button>
+    </form>
+
+    <p class="hint">Try <code>alice / password</code> or <code>bob / password</code></p>
+    <p th:if="${param.error}" class="error">Invalid username or password.</p>
+    <p th:if="${param.logout}" class="success">You have been logged out.</p>
+  </section>
+
+  <footer>
+    <a th:href="@{/}">Back to home</a>
+  </footer>
+</main>
+</body>
+</html>
