@@ -2,6 +2,13 @@
 
 Questions asked during this session.
 
+1. [What type of instructions does Terraform support?](#1-what-type-of-instructions-does-terraform-support) — Jul 11, 2026
+2. [What are the built in functions in Terraform?](#2-what-are-the-built-in-functions-in-terraform) — Jul 11, 2026
+3. [What are the general format/patterns for 'resource' instructions?](#3-what-are-the-general-formatpatterns-for-resource-instructions) — Jul 11, 2026
+4. [List most common resource names from AWS Provider](#4-list-most-common-resource-names-from-aws-provider) — Jul 11, 2026
+5. [How does Terraform support modular script files?](#5-how-does-terraform-support-modular-script-files) — Jul 12, 2026
+6. [What are the most common 'terraform' commands with examples?](#6-what-are-the-most-common-terraform-commands-with-examples) — Jul 12, 2026
+
 ---
 
 ## 1. What type of instructions does Terraform support?
@@ -571,3 +578,206 @@ resource "aws_instance" "app" {
 ```
 
 Full resource index: [Terraform Registry — hashicorp/aws](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+
+---
+
+## 5. How does Terraform support modular script files?
+
+*Asked: Sunday, Jul 12, 2026*
+
+### Answer
+
+Terraform modularizes configuration with **modules** — directories of `.tf` files you call with a `module` block.
+
+#### 1. Split files in one module (no imports)
+
+Every `.tf` file in a directory is loaded and merged into **one module**. You can split by concern freely:
+
+```
+main.tf
+variables.tf
+outputs.tf
+providers.tf
+```
+
+There is no `import` / `include`. Same directory = same module.
+
+#### 2. Reuse with child modules
+
+Package reusable config in its own folder and call it:
+
+```hcl
+module "network" {
+  source = "./modules/vpc"
+
+  cidr_block = "10.0.0.0/16"
+  env        = var.environment
+}
+
+# Use outputs from the child module
+resource "aws_instance" "app" {
+  subnet_id = module.network.private_subnet_id
+  # ...
+}
+```
+
+**Interface:**
+
+- **Inputs** → `variable` blocks in the child
+- **Outputs** → `output` blocks in the child (`module.NAME.output_name`)
+
+#### 3. Where modules can come from (`source`)
+
+| Source | Example |
+|--------|---------|
+| Local path | `source = "./modules/vpc"` |
+| Terraform Registry | `source = "terraform-aws-modules/vpc/aws"` |
+| Git | `source = "git::https://github.com/org/repo.git//modules/vpc"` |
+| HTTP / S3 / GCS | Archive URL or object store |
+
+#### 4. Mental model
+
+```
+Root module (where you run terraform)
+ ├── resources, variables, outputs
+ └── module "x" { source = "..." }  →  child module
+                                      └── can call more modules
+```
+
+So: **multiple `.tf` files** organize one module; **`module` blocks** compose reusable modules across directories (or remote sources).
+
+---
+
+## 6. What are the most common 'terraform' commands with examples?
+
+*Asked: Sunday, Jul 12, 2026*
+
+### Answer
+
+Terraform is driven by **CLI commands**. You run them in the directory that contains your root module (the `.tf` files).
+
+#### Core workflow (use these every day)
+
+| Command | Purpose |
+|---------|---------|
+| `terraform init` | Download providers/modules, set up backend |
+| `terraform plan` | Preview changes (diff of desired vs state) |
+| `terraform apply` | Create/update infrastructure |
+| `terraform destroy` | Tear down managed resources |
+| `terraform fmt` | Format `.tf` files |
+| `terraform validate` | Check syntax and config validity |
+
+#### Typical day-to-day sequence
+
+```bash
+cd my-project
+
+terraform init                 # first time (or after new providers/modules)
+terraform fmt -recursive       # tidy formatting
+terraform validate             # catch errors early
+terraform plan                 # review what will change
+terraform apply                # apply after review
+# or: terraform apply -auto-approve
+```
+
+#### Command examples
+
+**`init` — prepare the working directory**
+
+```bash
+terraform init
+terraform init -upgrade          # upgrade providers/modules to newer allowed versions
+terraform init -reconfigure      # re-init backend (e.g. after backend config change)
+```
+
+**`plan` — show the execution plan**
+
+```bash
+terraform plan
+terraform plan -out=tfplan       # save plan for apply
+terraform plan -var="env=dev"
+terraform plan -var-file="prod.tfvars"
+terraform plan -target=aws_s3_bucket.app   # limit to one resource (use sparingly)
+```
+
+**`apply` — make reality match config**
+
+```bash
+terraform apply
+terraform apply tfplan           # apply a saved plan (no re-prompt)
+terraform apply -auto-approve
+terraform apply -var-file="prod.tfvars"
+```
+
+**`destroy` — remove managed resources**
+
+```bash
+terraform destroy
+terraform destroy -auto-approve
+terraform destroy -target=aws_instance.app
+```
+
+**`fmt` / `validate` — hygiene**
+
+```bash
+terraform fmt
+terraform fmt -recursive
+terraform fmt -check             # CI: fail if files need formatting
+terraform validate
+```
+
+#### State & inspection
+
+| Command | Purpose |
+|---------|---------|
+| `terraform show` | Show state or a saved plan |
+| `terraform state list` | List resource addresses in state |
+| `terraform state show ADDR` | Show one resource from state |
+| `terraform output` | Print root module outputs |
+| `terraform console` | Interactive expression evaluator |
+
+```bash
+terraform show
+terraform show tfplan
+terraform state list
+terraform state show aws_instance.app
+terraform output
+terraform output public_ip
+terraform console              # then type: length(var.project_name)
+```
+
+#### Useful extras
+
+| Command | Purpose |
+|---------|---------|
+| `terraform refresh` / `apply -refresh-only` | Sync state with real infrastructure |
+| `terraform import` | Bring an existing cloud resource under Terraform |
+| `terraform graph` | Dependency graph (DOT format) |
+| `terraform providers` | Show required providers |
+| `terraform version` | CLI + provider versions |
+| `terraform workspace` | Isolate state per environment (dev/stage/prod) |
+
+```bash
+terraform apply -refresh-only
+terraform import aws_s3_bucket.app my-existing-bucket
+terraform providers
+terraform version
+
+terraform workspace list
+terraform workspace new staging
+terraform workspace select staging
+```
+
+#### Mental model
+
+```
+init      →  download plugins, connect backend
+plan      →  "what would change?"
+apply     →  "make it so"
+destroy   →  "remove what we manage"
+state/*   →  inspect / repair the inventory Terraform tracks
+```
+
+Most work is: **`init` → `plan` → `apply`**. Use `fmt`/`validate` before plan, and `state`/`output`/`show` when debugging.
+
+Full reference: [HashiCorp — Terraform CLI Commands](https://developer.hashicorp.com/terraform/cli/commands)

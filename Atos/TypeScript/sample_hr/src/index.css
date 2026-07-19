@@ -1,0 +1,328 @@
+:root {
+  --bg: #f3efe6;
+  --surface: #fffdf8;
+  --ink: #1c2430;
+  --muted: #5c6675;
+  --line: #d7d0c3;
+  --accent: #0f6b5c;
+  --accent-soft: #d8efe9;
+  --danger: #9b2c2c;
+  --danger-soft: #f8e4e4;
+  --info: #245b8a;
+  --info-soft: #e2eef8;
+  --active: #0f6b5c;
+  --on_leave: #9a6700;
+  --terminated: #6b7280;
+  --shadow: 0 12px 40px rgba(28, 36, 48, 0.08);
+  --radius: 14px;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, #e7f4ef 0%, transparent 40%),
+    linear-gradient(180deg, #f7f3eb 0%, var(--bg) 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  background: var(--accent);
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-color: transparent;
+}
+
+button.ghost {
+  width: 100%;
+  margin-top: 0.75rem;
+  background: transparent;
+  color: var(--muted);
+  border-color: var(--line);
+}
+
+.link-button {
+  margin-left: 0.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-decoration: underline;
+  border-radius: 0;
+}
+
+.app {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero {
+  margin-bottom: 1.75rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  max-width: 40rem;
+  color: var(--muted);
+  margin: 0.6rem 0 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.sidebar,
+.main,
+.employee-form,
+.stats,
+.employee-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.sidebar {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.main__toolbar {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.field span {
+  color: var(--muted);
+}
+
+.field input,
+.field select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  background: white;
+  color: var(--ink);
+}
+
+.employee-form,
+.stats {
+  padding: 1rem;
+  box-shadow: none;
+}
+
+.employee-form h2,
+.stats h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.form-error {
+  color: var(--danger);
+  margin: 0 0 0.75rem;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0;
+}
+
+.stats__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.stats ul {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.stats li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.list__item {
+  margin: 0;
+}
+
+.empty {
+  margin: 1.5rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+.employee-card {
+  padding: 1rem;
+  box-shadow: none;
+}
+
+.employee-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+.employee-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.meta dt {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.meta dd {
+  margin: 0.2rem 0 0;
+}
+
+.employee-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge--active {
+  background: var(--accent-soft);
+  color: var(--active);
+}
+
+.badge--on_leave {
+  background: #fff1c9;
+  color: var(--on_leave);
+}
+
+.badge--terminated {
+  background: #eceff3;
+  color: var(--terminated);
+}
+
+.badge--info {
+  background: var(--info-soft);
+  color: var(--info);
+}
+
+.badge--error {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters,
+  .meta {
+    grid-template-columns: 1fr;
+  }
+}
