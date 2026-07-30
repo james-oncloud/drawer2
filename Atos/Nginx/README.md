@@ -43,7 +43,7 @@ All of that is emitted as **one JSON line per request** in `logs/nginx/access.js
 ## Run it
 
 ```bash
-docker compose up --build
+docker compose up --build -d
 ```
 
 ## Shutdown
