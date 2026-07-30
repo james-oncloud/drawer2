@@ -1,0 +1,193 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Orders API (Nginx + Spring Boot)",
+    "description": "Calls the orders application through the Nginx edge proxy at {{baseUrl}}.\n\nStart the stack with `docker compose up --build`, then import this collection.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    },
+    {
+      "key": "orderId",
+      "value": "1001"
+    },
+    {
+      "key": "requestId",
+      "value": "postman-demo-001"
+    }
+  ],
+  "item": [
+    {
+      "name": "Edge",
+      "item": [
+        {
+          "name": "Edge root",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/",
+            "description": "Nginx edge info response (does not hit Spring Boot)."
+          }
+        },
+        {
+          "name": "Actuator health",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Request-ID",
+                "value": "{{requestId}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{baseUrl}}/actuator/health",
+            "description": "Spring Boot Actuator health via Nginx."
+          }
+        },
+        {
+          "name": "Actuator info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/actuator/info"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Create order",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Created (201)', function () {",
+                  "  pm.response.to.have.status(201);",
+                  "});",
+                  "const body = pm.response.json();",
+                  "if (body && body.id != null) {",
+                  "  pm.collectionVariables.set('orderId', String(body.id));",
+                  "}",
+                  "pm.test('Has X-Request-ID response header', function () {",
+                  "  pm.expect(pm.response.headers.get('X-Request-ID')).to.be.ok;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-Request-ID",
+                "value": "{{requestId}}",
+                "type": "text",
+                "description": "Correlation id — appears in Nginx JSON logs and Spring MDC."
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sku\": \"WIDGET\",\n  \"quantity\": 2\n}"
+            },
+            "url": "{{baseUrl}}/api/orders",
+            "description": "Creates an order. Saves returned `id` into collection variable `orderId`."
+          }
+        },
+        {
+          "name": "Get order by id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('OK or Not Found', function () {",
+                  "  pm.expect([200, 404]).to.include(pm.response.code);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Request-ID",
+                "value": "{{requestId}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{baseUrl}}/api/orders/{{orderId}}",
+            "description": "Fetches order by id. Ids divisible by 7 are intentionally slow (~450ms) for upstream timing demos."
+          }
+        },
+        {
+          "name": "Get order (not found)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Request-ID",
+                "value": "postman-not-found"
+              }
+            ],
+            "url": "{{baseUrl}}/api/orders/999999",
+            "description": "Expected 404 — useful for status-code telemetry in access.json.log."
+          }
+        },
+        {
+          "name": "Get order (slow path demo)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Request-ID",
+                "value": "postman-slow-7"
+              }
+            ],
+            "url": "{{baseUrl}}/api/orders/1001",
+            "description": "1001 % 7 === 0 → ~450ms sleep. Watch `upstream_response_time` in logs/nginx/access.json.log.\n\nCreate the order first (Create order) or use any existing id divisible by 7."
+          }
+        },
+        {
+          "name": "Boom (5xx telemetry demo)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Simulated 500', function () {",
+                  "  pm.response.to.have.status(500);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Request-ID",
+                "value": "postman-boom"
+              }
+            ],
+            "url": "{{baseUrl}}/api/orders/health-demo/boom",
+            "description": "Intentional 500 for Nginx 5xx / alert-pipeline demos."
+          }
+        }
+      ]
+    }
+  ]
+}

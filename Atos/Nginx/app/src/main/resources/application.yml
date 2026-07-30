@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  # Trust X-Forwarded-* from Nginx so the app sees the real client IP / scheme
+  forward-headers-strategy: framework
+
+spring:
+  application:
+    name: orders-api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  pattern:
+    # requestId comes from MDC (set by RequestIdFilter / Nginx X-Request-ID)
+    console: "%d{ISO8601} [%thread] %-5level %logger{36} requestId=%X{requestId} - %msg%n"

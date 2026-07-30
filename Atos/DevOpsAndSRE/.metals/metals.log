@@ -1,0 +1,61 @@
+2026.07.26 16:30:34 INFO  Started: Metals version 1.6.8 in folders '/Users/jamesking/work/drawer2/Atos/DevOpsAndSRE' for client Cursor 1.128.0.
+2026.07.26 16:30:34 INFO  Memory monitor started
+2026.07.26 16:30:34 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.07.26 16:30:47 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/SampleAppApplication.java
+2026.07.26 16:30:47 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java
+2026.07.26 16:37:47 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java
+2026.07.26 16:37:47 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:37:51 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/SampleAppApplication.java
+2026.07.26 16:37:51 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/SampleAppApplication.java. Using fallback presentation compiler.
+2026.07.26 16:37:55 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/SampleAppApplication.java. Using fallback presentation compiler.
+2026.07.26 16:37:57 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java
+2026.07.26 16:37:57 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:37:58 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:37:59 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+Jul 26, 2026 4:37:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+2026.07.26 16:39:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:15 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:28 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:33 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:37 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:50 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:39:54 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:40:25 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:40:46 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:40:46 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:40:51 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:40:51 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java]
+2026.07.26 16:40:51 INFO  empty definition using pc, found symbol in pc: java/lang/IllegalStateException# (full report at: "/Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/.metals/.reports/metals-full/2026-07-26/r_empty-definition_16-40-51-210.md")
+2026.07.26 16:41:16 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 16:41:16 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 21:27:54 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 21:27:54 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 21:27:54 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 21:31:13 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.26 21:31:13 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.27 09:01:37 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java
+2026.07.27 09:01:38 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.27 09:01:39 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/SampleAppApplication.java
+2026.07.27 09:01:39 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/SampleAppApplication.java. Using fallback presentation compiler.
+2026.07.27 09:01:40 WARN  no build target for: /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java
+2026.07.27 09:01:40 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.27 09:01:42 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.27 09:07:55 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:33:08 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:33:08 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:33:12 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:48:58 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:49:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:49:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.29 19:49:00 INFO  Created report: Optional[file:///Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java]
+2026.07.29 19:49:00 INFO  empty definition using pc, found symbol in pc: _empty_/MeterRegistry# (full report at: "/Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/.metals/.reports/metals-full/2026-07-29/r_empty-definition_19-49-00-220.md")
+2026.07.29 19:49:00 INFO  no build target found for /Users/jamesking/work/drawer2/Atos/DevOpsAndSRE/sample_app/src/main/java/com/example/sampleapp/HelloController.java. Using fallback presentation compiler.
+2026.07.30 19:41:16 INFO  Shutting down server
+2026.07.30 19:41:16 INFO  Memory monitor stopped
+2026.07.30 19:41:16 INFO  shutting down Metals
+2026.07.30 19:41:16 INFO  Exiting server

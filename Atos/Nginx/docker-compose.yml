@@ -1,0 +1,23 @@
+services:
+  app:
+    build: ./app
+    container_name: orders-api
+    expose:
+      - "8080"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/actuator/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 40s
+
+  nginx:
+    build: ./nginx
+    container_name: orders-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      app:
+        condition: service_healthy
