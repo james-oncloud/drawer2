@@ -383,3 +383,67 @@ kubectl top pods
 - [Node Allocatable](https://kubernetes.io/docs/tasks/administer-cluster/reserve-compute-resources/)
 - [Pod QoS Classes](https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/)
 - [Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
+
+---
+
+## How a Node declares capacity to the scheduler
+
+The node does **not** talk to the scheduler directly. The **kubelet** reports capacity into a **Node** API object; the scheduler **watches** that object.
+
+### 1. Kubelet discovers the machine
+
+On startup (and periodically), the kubelet reads local hardware/OS info:
+
+- CPU count
+- Memory
+- Ephemeral storage
+- Hugepages, etc.
+
+That becomes **`Node.status.capacity`** — raw machine size.
+
+### 2. Kubelet computes what Pods may use
+
+It subtracts reservations configured on the kubelet:
+
+```text
+allocatable ≈ capacity
+             − system-reserved
+             − kube-reserved
+             − eviction-hard thresholds (memory/storage)
+```
+
+That becomes **`Node.status.allocatable`** — what the **scheduler** actually uses.
+
+### 3. Kubelet registers / updates the Node via the API
+
+The kubelet is an API client. It **creates or patches** the `Node` object:
+
+```text
+kubelet  →  kube-apiserver  →  etcd
+              Node.status.capacity
+              Node.status.allocatable
+              Node.status.conditions (Ready, …)
+```
+
+Heartbeats / status updates keep that fresh (`Node.status` and often a `Lease` in `kube-node-lease`).
+
+### 4. Scheduler only reads the API
+
+The scheduler does **not** poll nodes over SSH. It watches `Node` objects and filters with:
+
+```text
+pod.requests ≤ node.status.allocatable − sum(requests of Pods on that node)
+```
+
+### Extended resources (GPUs, etc.)
+
+**Device plugins** register with the kubelet; the kubelet adds things like `nvidia.com/gpu: 2` into `capacity` / `allocatable`. Same publication path.
+
+### See it
+
+```bash
+kubectl get node <name> -o jsonpath='{.status.capacity}{"\n"}{.status.allocatable}{"\n"}'
+kubectl describe node <name>
+```
+
+**Summary:** the node “declares” capacity by the **kubelet writing `status.capacity` / `status.allocatable` on the Node API object**; the scheduler consumes that from the control plane, not from a direct node channel.
