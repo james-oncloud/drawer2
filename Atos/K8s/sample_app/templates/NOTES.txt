@@ -1,0 +1,16 @@
+Release "{{ .Release.Name }}" has been deployed.
+
+  Chart:   {{ .Chart.Name }}-{{ .Chart.Version }}
+  Image:   {{ .Values.image.repository }}:{{ .Values.image.tag }}
+  Pods:    {{ .Values.replicaCount }}
+  Service: {{ include "sample-app.fullname" . }} ({{ .Values.service.type }})
+
+To reach the app from your machine (port-forward):
+
+  kubectl port-forward svc/{{ include "sample-app.fullname" . }} 8080:{{ .Values.service.port }}
+
+Then open: http://localhost:8080
+
+To undeploy:
+
+  helm uninstall {{ .Release.Name }}

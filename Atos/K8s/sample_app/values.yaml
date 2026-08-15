@@ -1,0 +1,16 @@
+# Default values for sample-app.
+# Override any of these with: helm install ... --set key=value
+# or with a custom values file: helm install ... -f my-values.yaml
+
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: {}
