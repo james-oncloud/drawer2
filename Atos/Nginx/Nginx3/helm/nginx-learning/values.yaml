@@ -1,0 +1,71 @@
+# Default values for the nginx-learning chart.
+# Override with --set or -f values-local.yaml
+
+namespace:
+  create: true
+  name: nginx-learning
+
+nginx:
+  replicaCount: 1
+  image:
+    repository: nginx
+    tag: "1.25"
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 80
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 200m
+      memory: 128Mi
+
+users:
+  replicaCount: 1
+  image:
+    repository: users-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    port: 8081
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+
+orders:
+  replicaCount: 1
+  image:
+    repository: orders-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    port: 8082
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+
+stock:
+  replicaCount: 1
+  image:
+    repository: stock-service
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    port: 8083
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi

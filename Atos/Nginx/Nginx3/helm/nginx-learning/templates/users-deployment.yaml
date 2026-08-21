@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-service
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: users-service
+    {{- include "nginx-learning.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.users.replicaCount }}
+  selector:
+    matchLabels:
+      app: users-service
+  template:
+    metadata:
+      labels:
+        app: users-service
+        {{- include "nginx-learning.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: users-service
+          image: "{{ .Values.users.image.repository }}:{{ .Values.users.image.tag }}"
+          imagePullPolicy: {{ .Values.users.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.users.service.port }}
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          resources:
+            {{- toYaml .Values.users.resources | nindent 12 }}

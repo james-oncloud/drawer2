@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "nginx-learning.ordersServiceName" . }}
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: orders-service
+    {{- include "nginx-learning.labels" . | nindent 4 }}
+spec:
+  type: ClusterIP
+  selector:
+    app: orders-service
+  ports:
+    - name: http
+      port: {{ .Values.orders.service.port }}
+      targetPort: http
+      protocol: TCP

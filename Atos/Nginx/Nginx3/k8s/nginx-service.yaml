@@ -1,0 +1,24 @@
+# NGINX Service — cluster entry point for HTTP traffic.
+#
+# Access options (pick one; port-forward is documented as the default in README):
+#   1) kubectl port-forward service/nginx 8080:80 -n nginx-learning
+#   2) Change type to NodePort and curl the node IP:nodePort
+#   3) Change type to LoadBalancer where your cluster supports it
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  namespace: nginx-learning
+  labels:
+    app: nginx
+    app.kubernetes.io/name: nginx
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  type: ClusterIP
+  selector:
+    app: nginx
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP

@@ -1,0 +1,125 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: nginx
+    {{- include "nginx-learning.labels" . | nindent 4 }}
+data:
+  # NGINX config generated from Helm values (service names + ports).
+  nginx.conf: |
+    events {
+        worker_connections 1024;
+    }
+
+    http {
+        include       /etc/nginx/mime.types;
+        default_type  application/octet-stream;
+        index         index.html;
+
+        log_format telemetry escape=json
+            '{'
+                '"time_local":"$time_local",'
+                '"remote_addr":"$remote_addr",'
+                '"method":"$request_method",'
+                '"uri":"$request_uri",'
+                '"status":$status,'
+                '"body_bytes_sent":$body_bytes_sent,'
+                '"request_time":$request_time,'
+                '"upstream_response_time":"$upstream_response_time",'
+                '"upstream_connect_time":"$upstream_connect_time",'
+                '"upstream_header_time":"$upstream_header_time",'
+                '"upstream_addr":"$upstream_addr",'
+                '"upstream_status":"$upstream_status",'
+                '"http_referer":"$http_referer",'
+                '"http_user_agent":"$http_user_agent"'
+            '}';
+
+        access_log /var/log/nginx/access.log telemetry;
+        error_log  /var/log/nginx/error.log;
+
+        # Upstream host = Kubernetes Service DNS name from helpers / values.
+        upstream users_backend {
+            server {{ include "nginx-learning.usersServiceName" . }}:{{ .Values.users.service.port }};
+        }
+
+        upstream orders_backend {
+            server {{ include "nginx-learning.ordersServiceName" . }}:{{ .Values.orders.service.port }};
+        }
+
+        upstream stock_backend {
+            server {{ include "nginx-learning.stockServiceName" . }}:{{ .Values.stock.service.port }};
+        }
+
+        # Example multi-server upstream (not used — NGINX round-robin demo):
+        # upstream users_backend {
+        #     server users-service-1:{{ .Values.users.service.port }};
+        #     server users-service-2:{{ .Values.users.service.port }};
+        #     server users-service-3:{{ .Values.users.service.port }};
+        # }
+
+        server {
+            listen {{ .Values.nginx.service.port }};
+            server_name _;
+
+            # No trailing slash on proxy_pass => full URI preserved.
+            location /users {
+                proxy_pass http://users_backend;
+                proxy_set_header Host              $host;
+                proxy_set_header X-Real-IP         $remote_addr;
+                proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                # Backends may sleep 0–10s; keep read timeout above that.
+                proxy_connect_timeout 5s;
+                proxy_send_timeout    15s;
+                proxy_read_timeout    15s;
+            }
+
+            location /orders {
+                proxy_pass http://orders_backend;
+                proxy_set_header Host              $host;
+                proxy_set_header X-Real-IP         $remote_addr;
+                proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                # Orders calls stock-service (up to +10s).
+                proxy_connect_timeout 5s;
+                proxy_send_timeout    25s;
+                proxy_read_timeout    25s;
+            }
+
+            location /stock {
+                proxy_pass http://stock_backend;
+                proxy_set_header Host              $host;
+                proxy_set_header X-Real-IP         $remote_addr;
+                proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_connect_timeout 5s;
+                proxy_send_timeout    15s;
+                proxy_read_timeout    15s;
+            }
+
+            location = /telemetry {
+                return 302 /telemetry/;
+            }
+
+            location /telemetry/ {
+                alias /usr/share/nginx/html/telemetry/;
+                access_log off;
+            }
+
+            location = /telemetry/access.log {
+                alias /var/log/nginx/access.log;
+                default_type application/x-ndjson;
+                charset utf-8;
+                add_header Cache-Control "no-store";
+                add_header Access-Control-Allow-Origin "*";
+                access_log off;
+            }
+
+            location / {
+                default_type text/plain;
+                return 404 "Unknown endpoint\n";
+            }
+        }
+    }

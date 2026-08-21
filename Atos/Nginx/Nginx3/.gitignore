@@ -1,0 +1,8 @@
+target/
+.idea/
+*.iml
+.metals/
+.vscode/
+.DS_Store
+nginx/logs/
+!nginx/logs/.gitkeep

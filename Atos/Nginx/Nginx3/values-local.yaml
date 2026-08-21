@@ -1,0 +1,24 @@
+# Example override file for local Kubernetes / Minikube.
+# Usage:
+#   helm upgrade --install nginx-learning ./helm/nginx-learning \
+#     -f values-local.yaml \
+#     --namespace nginx-learning \
+#     --create-namespace
+
+namespace:
+  create: true
+  name: nginx-learning
+
+# Scale users to demonstrate Kubernetes Service load balancing across Pods.
+users:
+  replicaCount: 3
+
+orders:
+  replicaCount: 1
+
+stock:
+  replicaCount: 1
+
+nginx:
+  service:
+    type: ClusterIP

@@ -1,0 +1,48 @@
+# Deployment for the stock backend.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-service
+  namespace: nginx-learning
+  labels:
+    app: stock-service
+    app.kubernetes.io/name: stock-service
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-service
+  template:
+    metadata:
+      labels:
+        app: stock-service
+        app.kubernetes.io/name: stock-service
+        app.kubernetes.io/part-of: nginx-learning
+    spec:
+      containers:
+        - name: stock-service
+          image: stock-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8083
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

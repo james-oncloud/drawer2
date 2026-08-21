@@ -1,0 +1,68 @@
+# NGINX Deployment: runs the reverse proxy and mounts the ConfigMap as nginx.conf.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  namespace: nginx-learning
+  labels:
+    app: nginx
+    app.kubernetes.io/name: nginx
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+        app.kubernetes.io/name: nginx
+        app.kubernetes.io/part-of: nginx-learning
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.25
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+          # TCP probes avoid depending on backend readiness or the 404 fallback.
+          readinessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          livenessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
+          volumeMounts:
+            # volumeMount: attach the volume at a path inside the container.
+            - name: nginx-config
+              mountPath: /etc/nginx/nginx.conf
+              subPath: nginx.conf
+              readOnly: true
+            - name: telemetry-ui
+              mountPath: /usr/share/nginx/html/telemetry
+              readOnly: true
+            - name: nginx-logs
+              mountPath: /var/log/nginx
+      volumes:
+        # volume: materializes ConfigMap keys as files.
+        - name: nginx-config
+          configMap:
+            name: nginx-config
+        - name: telemetry-ui
+          configMap:
+            name: nginx-telemetry-ui
+        - name: nginx-logs
+          emptyDir: {}

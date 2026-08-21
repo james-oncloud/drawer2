@@ -1,0 +1,55 @@
+# Deployment: desired state for users-service Pods (replicas, image, probes).
+# Kubernetes keeps the actual Pod count matching .spec.replicas.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-service
+  namespace: nginx-learning
+  labels:
+    app: users-service
+    app.kubernetes.io/name: users-service
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  replicas: 1
+  selector:
+    # Must match the Pod template labels below.
+    matchLabels:
+      app: users-service
+  template:
+    metadata:
+      labels:
+        app: users-service
+        app.kubernetes.io/name: users-service
+        app.kubernetes.io/part-of: nginx-learning
+    spec:
+      containers:
+        - name: users-service
+          image: users-service:latest
+          # Prefer local images built on the node (Minikube / Docker Desktop).
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8081
+          # readinessProbe: Pod receives traffic only when this succeeds.
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          # livenessProbe: if this fails repeatedly, kubelet restarts the container.
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          # requests: scheduler guarantees; limits: hard caps (throttling/OOM).
+          # Slightly higher memory than a tiny Go service — Spring Boot needs headroom.
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

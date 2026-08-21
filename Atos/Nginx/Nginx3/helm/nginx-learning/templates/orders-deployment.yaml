@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orders-service
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: orders-service
+    {{- include "nginx-learning.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.orders.replicaCount }}
+  selector:
+    matchLabels:
+      app: orders-service
+  template:
+    metadata:
+      labels:
+        app: orders-service
+        {{- include "nginx-learning.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: orders-service
+          image: "{{ .Values.orders.image.repository }}:{{ .Values.orders.image.tag }}"
+          imagePullPolicy: {{ .Values.orders.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.orders.service.port }}
+          env:
+            - name: STOCK_SERVICE_BASE_URL
+              value: "http://{{ include "nginx-learning.stockServiceName" . }}:{{ .Values.stock.service.port }}"
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          resources:
+            {{- toYaml .Values.orders.resources | nindent 12 }}

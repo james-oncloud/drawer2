@@ -1,0 +1,402 @@
+# Static HTML for http://<nginx>/telemetry/ (browser log viewer).
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-telemetry-ui
+  namespace: nginx-learning
+  labels:
+    app: nginx
+    app.kubernetes.io/name: nginx
+    app.kubernetes.io/part-of: nginx-learning
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>NGINX telemetry</title>
+      <style>
+        :root {
+          --bg: #0f1419;
+          --panel: #1a2332;
+          --border: #2d3a4d;
+          --text: #e7ecf3;
+          --muted: #8b9bb4;
+          --accent: #3d9cf0;
+          --ok: #3ecf8e;
+          --warn: #e6b84d;
+          --bad: #e85d5d;
+          --mono: "IBM Plex Mono", "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+          --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+          margin: 0;
+          min-height: 100vh;
+          background:
+            radial-gradient(ellipse 80% 50% at 10% -10%, #1c2d45 0%, transparent 55%),
+            var(--bg);
+          color: var(--text);
+          font-family: var(--sans);
+        }
+
+        header {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          align-items: end;
+          justify-content: space-between;
+          padding: 1.25rem 1.5rem 1rem;
+          border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+          margin: 0;
+          font-size: 1.15rem;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+        }
+
+        .sub {
+          margin: 0.35rem 0 0;
+          color: var(--muted);
+          font-size: 0.85rem;
+        }
+
+        .controls {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.6rem;
+          align-items: center;
+        }
+
+        button, select, input[type="search"] {
+          font: inherit;
+          border: 1px solid var(--border);
+          background: var(--panel);
+          color: var(--text);
+          border-radius: 6px;
+          padding: 0.45rem 0.7rem;
+        }
+
+        button {
+          cursor: pointer;
+        }
+
+        button:hover { border-color: var(--accent); }
+
+        input[type="search"] {
+          min-width: 12rem;
+        }
+
+        .meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 0.75rem 1.5rem;
+          color: var(--muted);
+          font-size: 0.8rem;
+          font-family: var(--mono);
+          border-bottom: 1px solid var(--border);
+        }
+
+        .meta strong { color: var(--text); font-weight: 500; }
+
+        .status-dot {
+          display: inline-block;
+          width: 0.55rem;
+          height: 0.55rem;
+          border-radius: 50%;
+          margin-right: 0.35rem;
+          background: var(--warn);
+        }
+
+        .status-dot.live { background: var(--ok); }
+        .status-dot.err { background: var(--bad); }
+
+        main { padding: 1rem 1.5rem 2rem; overflow-x: auto; }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          font-family: var(--mono);
+          font-size: 0.78rem;
+        }
+
+        th, td {
+          text-align: left;
+          padding: 0.55rem 0.65rem;
+          border-bottom: 1px solid var(--border);
+          white-space: nowrap;
+        }
+
+        th {
+          color: var(--muted);
+          font-weight: 500;
+          position: sticky;
+          top: 0;
+          background: var(--bg);
+        }
+
+        tr:hover td { background: rgba(61, 156, 240, 0.06); }
+
+        .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+        .slow { color: var(--warn); }
+        .slower { color: var(--bad); font-weight: 600; }
+        .code-2xx { color: var(--ok); }
+        .code-3xx { color: var(--accent); }
+        .code-4xx { color: var(--warn); }
+        .code-5xx { color: var(--bad); }
+
+        .empty {
+          padding: 3rem 1rem;
+          text-align: center;
+          color: var(--muted);
+        }
+
+        .empty code {
+          font-family: var(--mono);
+          color: var(--text);
+        }
+
+        a.raw {
+          color: var(--accent);
+          text-decoration: none;
+          font-size: 0.85rem;
+        }
+
+        a.raw:hover { text-decoration: underline; }
+      </style>
+    </head>
+    <body>
+      <header>
+        <div>
+          <h1>NGINX telemetry</h1>
+          <p class="sub">
+            JSON access log with <code>request_time</code> and <code>upstream_response_time</code>
+          </p>
+        </div>
+        <div class="controls">
+          <input id="filter" type="search" placeholder="Filter URI / status / IP" />
+          <label>
+            Refresh
+            <select id="interval">
+              <option value="0">Off</option>
+              <option value="2000" selected>2s</option>
+              <option value="5000">5s</option>
+              <option value="10000">10s</option>
+            </select>
+          </label>
+          <button type="button" id="reload">Reload</button>
+          <a class="raw" href="/telemetry/access.log" target="_blank" rel="noopener">Raw log</a>
+        </div>
+      </header>
+
+      <div class="meta">
+        <span><span id="dot" class="status-dot"></span><span id="fetch-state">idle</span></span>
+        <span>lines: <strong id="count">0</strong></span>
+        <span>shown: <strong id="shown">0</strong></span>
+        <span>avg request_time: <strong id="avg-rt">—</strong></span>
+        <span>avg upstream_response_time: <strong id="avg-urt">—</strong></span>
+        <span>updated: <strong id="updated">—</strong></span>
+      </div>
+
+      <main>
+        <div id="empty" class="empty" hidden>
+          No access-log lines yet.<br />
+          Hit the APIs, then reload:<br /><br />
+          <code>curl http://localhost/users/1</code><br />
+          <code>curl http://localhost/orders/42</code>
+        </div>
+        <table id="table" hidden>
+          <thead>
+            <tr>
+              <th>time</th>
+              <th>method</th>
+              <th>uri</th>
+              <th>status</th>
+              <th class="num">request_time</th>
+              <th class="num">upstream_response_time</th>
+              <th>upstream</th>
+              <th>client</th>
+              <th class="num">bytes</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </main>
+
+      <script>
+        const LOG_URL = "/telemetry/access.log";
+        const tbody = document.getElementById("tbody");
+        const empty = document.getElementById("empty");
+        const table = document.getElementById("table");
+        const filterInput = document.getElementById("filter");
+        const intervalSelect = document.getElementById("interval");
+        const dot = document.getElementById("dot");
+        const fetchState = document.getElementById("fetch-state");
+        let timer = null;
+        let rows = [];
+
+        function parseMs(value) {
+          if (value === undefined || value === null || value === "" || value === "-") return null;
+          // Multiple upstream attempts: "0.012, 0.045" — use the sum.
+          const parts = String(value).split(",").map((p) => parseFloat(p.trim()));
+          if (parts.some((n) => Number.isNaN(n))) return null;
+          return parts.reduce((a, b) => a + b, 0);
+        }
+
+        function fmtSec(n) {
+          if (n === null || Number.isNaN(n)) return "—";
+          return n.toFixed(3) + "s";
+        }
+
+        function speedClass(seconds) {
+          if (seconds === null) return "";
+          if (seconds >= 1) return "slower";
+          if (seconds >= 0.25) return "slow";
+          return "";
+        }
+
+        function statusClass(code) {
+          const n = Number(code);
+          if (n >= 500) return "code-5xx";
+          if (n >= 400) return "code-4xx";
+          if (n >= 300) return "code-3xx";
+          if (n >= 200) return "code-2xx";
+          return "";
+        }
+
+        function parseLog(text) {
+          return text
+            .split("\n")
+            .map((line) => line.trim())
+            .filter(Boolean)
+            .map((line) => {
+              try {
+                return JSON.parse(line);
+              } catch {
+                return null;
+              }
+            })
+            .filter(Boolean)
+            .reverse();
+        }
+
+        function matchesFilter(row, q) {
+          if (!q) return true;
+          const hay = [
+            row.time_local,
+            row.method,
+            row.uri,
+            row.status,
+            row.remote_addr,
+            row.upstream_addr,
+            row.request_time,
+            row.upstream_response_time,
+          ]
+            .join(" ")
+            .toLowerCase();
+          return hay.includes(q.toLowerCase());
+        }
+
+        function render() {
+          const q = filterInput.value.trim();
+          const visible = rows.filter((r) => matchesFilter(r, q));
+
+          document.getElementById("count").textContent = String(rows.length);
+          document.getElementById("shown").textContent = String(visible.length);
+
+          const rts = visible.map((r) => parseMs(r.request_time)).filter((n) => n !== null);
+          const urts = visible.map((r) => parseMs(r.upstream_response_time)).filter((n) => n !== null);
+          const avg = (arr) => (arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : null);
+          document.getElementById("avg-rt").textContent = fmtSec(avg(rts));
+          document.getElementById("avg-urt").textContent = fmtSec(avg(urts));
+
+          if (!visible.length) {
+            table.hidden = true;
+            empty.hidden = false;
+            empty.innerHTML = rows.length
+              ? "No rows match the current filter."
+              : `No access-log lines yet.<br />Hit the APIs, then reload:<br /><br />
+                 <code>curl http://localhost/users/1</code><br />
+                 <code>curl http://localhost/orders/42</code>`;
+            tbody.innerHTML = "";
+            return;
+          }
+
+          empty.hidden = true;
+          table.hidden = false;
+          tbody.innerHTML = visible
+            .map((r) => {
+              const rt = parseMs(r.request_time);
+              const urt = parseMs(r.upstream_response_time);
+              return `<tr>
+                <td>${escapeHtml(r.time_local || "")}</td>
+                <td>${escapeHtml(r.method || "")}</td>
+                <td title="${escapeAttr(r.uri || "")}">${escapeHtml(truncate(r.uri || "", 64))}</td>
+                <td class="${statusClass(r.status)}">${escapeHtml(String(r.status ?? ""))}</td>
+                <td class="num ${speedClass(rt)}">${fmtSec(rt)}</td>
+                <td class="num ${speedClass(urt)}">${fmtSec(urt)}</td>
+                <td title="${escapeAttr(r.upstream_addr || "")}">${escapeHtml(truncate(r.upstream_addr || "—", 28))}</td>
+                <td>${escapeHtml(r.remote_addr || "")}</td>
+                <td class="num">${escapeHtml(String(r.body_bytes_sent ?? ""))}</td>
+              </tr>`;
+            })
+            .join("");
+        }
+
+        function truncate(s, n) {
+          return s.length > n ? s.slice(0, n - 1) + "…" : s;
+        }
+
+        function escapeHtml(s) {
+          return String(s)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;");
+        }
+
+        function escapeAttr(s) {
+          return escapeHtml(s).replaceAll("'", "&#39;");
+        }
+
+        async function loadLogs() {
+          fetchState.textContent = "fetching…";
+          dot.className = "status-dot";
+          try {
+            const res = await fetch(LOG_URL + "?t=" + Date.now(), { cache: "no-store" });
+            if (!res.ok) throw new Error("HTTP " + res.status);
+            const text = await res.text();
+            rows = parseLog(text);
+            document.getElementById("updated").textContent = new Date().toLocaleTimeString();
+            fetchState.textContent = "live";
+            dot.className = "status-dot live";
+            render();
+          } catch (err) {
+            fetchState.textContent = "error: " + err.message;
+            dot.className = "status-dot err";
+          }
+        }
+
+        function schedule() {
+          if (timer) clearInterval(timer);
+          timer = null;
+          const ms = Number(intervalSelect.value);
+          if (ms > 0) timer = setInterval(loadLogs, ms);
+        }
+
+        document.getElementById("reload").addEventListener("click", loadLogs);
+        filterInput.addEventListener("input", render);
+        intervalSelect.addEventListener("change", schedule);
+
+        loadLogs();
+        schedule();
+      </script>
+    </body>
+    </html>

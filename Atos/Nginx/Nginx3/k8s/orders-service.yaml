@@ -1,0 +1,20 @@
+# ClusterIP Service for orders-service Pods.
+# DNS name inside the namespace: orders-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: orders-service
+  namespace: nginx-learning
+  labels:
+    app: orders-service
+    app.kubernetes.io/name: orders-service
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  type: ClusterIP
+  selector:
+    app: orders-service
+  ports:
+    - name: http
+      port: 8082
+      targetPort: http
+      protocol: TCP

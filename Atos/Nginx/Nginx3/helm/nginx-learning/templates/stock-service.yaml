@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "nginx-learning.stockServiceName" . }}
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: stock-service
+    {{- include "nginx-learning.labels" . | nindent 4 }}
+spec:
+  type: ClusterIP
+  selector:
+    app: stock-service
+  ports:
+    - name: http
+      port: {{ .Values.stock.service.port }}
+      targetPort: http
+      protocol: TCP

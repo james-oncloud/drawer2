@@ -1,0 +1,25 @@
+# Service: stable virtual IP + DNS name in front of users-service Pods.
+# NGINX upstream points here (users-service:8081), NOT at individual Pods.
+#
+# ClusterIP (default): reachable inside the cluster only.
+# DNS name inside the namespace: users-service
+# Fully qualified: users-service.nginx-learning.svc.cluster.local
+apiVersion: v1
+kind: Service
+metadata:
+  name: users-service
+  namespace: nginx-learning
+  labels:
+    app: users-service
+    app.kubernetes.io/name: users-service
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  type: ClusterIP
+  selector:
+    # Selects Pods with label app=users-service (from the Deployment).
+    app: users-service
+  ports:
+    - name: http
+      port: 8081
+      targetPort: http
+      protocol: TCP

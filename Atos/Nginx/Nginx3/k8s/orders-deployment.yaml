@@ -1,0 +1,51 @@
+# Deployment for the orders backend.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orders-service
+  namespace: nginx-learning
+  labels:
+    app: orders-service
+    app.kubernetes.io/name: orders-service
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orders-service
+  template:
+    metadata:
+      labels:
+        app: orders-service
+        app.kubernetes.io/name: orders-service
+        app.kubernetes.io/part-of: nginx-learning
+    spec:
+      containers:
+        - name: orders-service
+          image: orders-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8082
+          env:
+            - name: STOCK_SERVICE_BASE_URL
+              value: http://stock-service:8083
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi

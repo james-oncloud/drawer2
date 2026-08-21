@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-service
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    app: stock-service
+    {{- include "nginx-learning.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.stock.replicaCount }}
+  selector:
+    matchLabels:
+      app: stock-service
+  template:
+    metadata:
+      labels:
+        app: stock-service
+        {{- include "nginx-learning.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: stock-service
+          image: "{{ .Values.stock.image.repository }}:{{ .Values.stock.image.tag }}"
+          imagePullPolicy: {{ .Values.stock.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.stock.service.port }}
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          resources:
+            {{- toYaml .Values.stock.resources | nindent 12 }}

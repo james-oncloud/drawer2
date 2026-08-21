@@ -1,0 +1,8 @@
+# Namespace isolates all learning resources from other cluster workloads.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx-learning
+  labels:
+    app.kubernetes.io/name: nginx-learning
+    app.kubernetes.io/part-of: nginx-learning

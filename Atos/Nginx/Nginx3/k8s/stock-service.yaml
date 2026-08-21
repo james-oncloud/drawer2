@@ -1,0 +1,20 @@
+# ClusterIP Service for stock-service Pods.
+# DNS name inside the namespace: stock-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: stock-service
+  namespace: nginx-learning
+  labels:
+    app: stock-service
+    app.kubernetes.io/name: stock-service
+    app.kubernetes.io/part-of: nginx-learning
+spec:
+  type: ClusterIP
+  selector:
+    app: stock-service
+  ports:
+    - name: http
+      port: 8083
+      targetPort: http
+      protocol: TCP
